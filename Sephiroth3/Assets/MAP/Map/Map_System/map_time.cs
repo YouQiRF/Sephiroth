@@ -21,7 +21,7 @@ public class map_time : MonoBehaviour
     void Update()
     {
         //Debug.Log(is_map_time);
-        //ResetMap();
+        ResetMap();
         changscene(3, 4);
 
 
