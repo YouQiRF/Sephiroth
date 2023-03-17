@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3163710766398361440}
   - component: {fileID: 981183308992674316}
   m_Layer: 0
-  m_Name: Shake_Camera_Attack
+  m_Name: Shake_Camera_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

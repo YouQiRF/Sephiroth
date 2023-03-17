@@ -24,7 +24,10 @@ public class Creat_Effect_Player : MonoBehaviour
     [SerializeField] public GameObject Buff_Recover;
     [SerializeField] public GameObject Buff_Armor;
     [SerializeField] public GameObject Attack_Basic;
-    [SerializeField] public GameObject Shake_Camera_Attack;
+     [SerializeField] public GameObject Shake_Camera_S;
+    
+    [SerializeField] public GameObject Shake_Camera_M;
+    [SerializeField] public GameObject Shake_Camera_L;
 
     
     void Start()
@@ -46,7 +49,7 @@ public class Creat_Effect_Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             Creat(Attack_Basic, Buff_Hit_pos[0]);
-            Instantiate(Shake_Camera_Attack, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
+            Instantiate(Shake_Camera_M, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
         }
 
     }

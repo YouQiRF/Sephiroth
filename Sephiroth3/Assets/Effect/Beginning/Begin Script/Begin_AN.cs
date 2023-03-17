@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using Project.Begin_Data;
 
 
 public class Begin_AN : MonoBehaviour
@@ -14,6 +15,8 @@ public class Begin_AN : MonoBehaviour
     [Header("切換Scenes")]
     [SerializeField] public int scenenum;
     // Start is called before the first frame update
+
+    public Begin_AN _begin_AN;
     void Start()
     {
         StartCoroutine(CreatBeginAN(scenenum));
