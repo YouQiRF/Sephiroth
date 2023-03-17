@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,18 +8,18 @@ using Project.Begin_Data;
 
 public class Begin_AN : MonoBehaviour
 {
-    [Header("畫面物件")]
+   /* [Header("畫面物件")]
     [SerializeField] public GameObject[] BeginAN;
     [Header("畫面持續時間")]
     [SerializeField] public int[] BeginANTime;
     [Header("切換Scenes")]
-    [SerializeField] public int scenenum;
+    [SerializeField] public int scenenum;*/
     // Start is called before the first frame update
 
-    public Begin_AN _begin_AN;
+    [SerializeField] public Begin_Data _begin_Data;
     void Start()
     {
-        StartCoroutine(CreatBeginAN(scenenum));
+        StartCoroutine(CreatBeginAN(_begin_Data.Load_scenes_nul));
     }
 
     // Update is called once per frame
@@ -27,24 +27,19 @@ public class Begin_AN : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene(scenenum);
+            SceneManager.LoadScene(_begin_Data.Load_scenes_nul);
         }
     }
-    /*  void CreatBeginAN(int number)
-      {
-          DestroyWithTag("Begin");
-          Instantiate(BeginAN[number]);s
-      }*/
 
     IEnumerator CreatBeginAN(int scenenum)
     {
-        for (int i = 0; i < BeginAN.Length; i++)
+        for (int i = 0; i < _begin_Data.Picturt.Length; i++)
         {
             //Debug.Log(i);
             DestroyWithTag("Begin");
-            Instantiate(BeginAN[i]);
-            yield return new WaitForSeconds(BeginANTime[i]);
-            if (i + 1 == BeginAN.Length)
+            Instantiate(_begin_Data.Picturt[i]);
+            yield return new WaitForSeconds(_begin_Data.Showtime[i]);
+            if (i + 1 == _begin_Data.Picturt.Length)
             {
                 SceneManager.LoadScene(scenenum);
             }

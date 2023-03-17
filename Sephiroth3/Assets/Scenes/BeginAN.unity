@@ -233,13 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d3728cffc25d634aadd76da9d0d9fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeginAN:
-  - {fileID: 8609137400864264225, guid: 0dd93202be950d84b9509e01abf79cb0, type: 3}
-  - {fileID: 3292979081156481131, guid: 76a5a9b250aa68e4d9f020e891bda9f9, type: 3}
-  - {fileID: 4793866159344354932, guid: 1e2a011538598d742b91439feb906614, type: 3}
-  - {fileID: 5671666587800036485, guid: cd4feac091dfa314e8289cd64593eb70, type: 3}
-  BeginANTime: 01000000030000000100000003000000
-  scenenum: 4
+  _begin_Data: {fileID: 11400000, guid: a87933915c14589488bc4576b0f1aba5, type: 2}
 --- !u!4 &461168472
 Transform:
   m_ObjectHideFlags: 0
@@ -283,6 +277,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_LightType: 0
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath: []
 --- !u!4 &698418774
 Transform:
   m_ObjectHideFlags: 0
