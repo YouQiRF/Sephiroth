@@ -126,9 +126,11 @@ public class GamePlayingManager : MonoBehaviour
     }
     private async void OnStopTruntable(StopTruntableDetected obj)
     {
+        var turntable = FindObjectOfType<TurntableManager>();
         //Debug.Log(_turntableGenerics.Length);
         Array.ForEach(_turntableGenerics,ChoseTurntable => ChoseTurntable.OnChoseEvent());
         _playerManager._playerActor._pointerManager.MoveSpeed = 0f;
+        turntable.ChangeAngle();
         await Task.Delay(800);
         _playerManager._playerActor._pointerManager.MoveSpeed = -180f;
     }

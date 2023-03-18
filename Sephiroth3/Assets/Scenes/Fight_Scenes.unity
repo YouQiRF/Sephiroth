@@ -11863,7 +11863,8 @@ MonoBehaviour:
   SummonerTurntable:
   - {fileID: 3570966548446127501}
   - {fileID: 3570966547329543102}
-  turntable_outerring: {fileID: 81819913}
+  outerring: {fileID: 81819913}
+  touterringUI: {fileID: 1281800967}
   SummonerOffset: {x: 6.59, y: -3.41, z: 0}
   TurntableOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &3570966548000148598

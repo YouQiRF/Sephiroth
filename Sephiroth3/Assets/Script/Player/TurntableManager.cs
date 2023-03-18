@@ -10,7 +10,8 @@ public class TurntableManager : MonoBehaviour
     [SerializeField] private float EndPoint;
     [SerializeField] public GameObject[] Summoner;
     [SerializeField] public GameObject[] SummonerTurntable;
-    [SerializeField] public GameObject turntable_outerring;
+    [SerializeField] public GameObject outerring;
+    [SerializeField] public GameObject touterringUI;
     //[SerializeField] public GameObject[] SummonerTurntable;
     [Header("Offset")]
     [SerializeField] private Vector3 SummonerOffset;
@@ -28,16 +29,17 @@ public class TurntableManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            EndPoint -= 25.5f;
-        }
         RotatingOuterRing();
     }
 
     public void SimonCheck()
     {
         
+    }
+
+    public void ChangeAngle()
+    {
+        EndPoint -= 25.5f;
     }
 
     public void OnPlayerSummon(int ChoseState)
@@ -52,7 +54,8 @@ public class TurntableManager : MonoBehaviour
 
     private void RotatingOuterRing()
     {
-        turntable_outerring.transform.rotation = Quaternion.Lerp(turntable_outerring.transform.rotation, quaternion.Euler(0,0,EndPoint), 0.2f);
+        outerring.transform.rotation = Quaternion.Lerp(outerring.transform.rotation, quaternion.Euler(0,0,EndPoint), 0.09f);
+        touterringUI.transform.rotation = Quaternion.Lerp(touterringUI.transform.rotation, quaternion.Euler(0,0,EndPoint), 0.09f);
     }
 
     private void OnDrawGizmos()
