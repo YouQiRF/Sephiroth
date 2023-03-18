@@ -12,6 +12,7 @@ public class GamePlayingManager : MonoBehaviour
 {
     [SerializeField] private PlayerManager _playerManager;
     [SerializeField] private TurntableGeneric[] _turntableGenerics;
+    
     [SerializeField] public MonsterGeneric[] _MonsterGenerics;
     // Start is called before the first frame update
     void Start()
@@ -123,10 +124,13 @@ public class GamePlayingManager : MonoBehaviour
         }
         //Array.ForEach(_MonsterGenerics, monsters => monsters.OnPassRound());
     }
-    private void OnStopTruntable(StopTruntableDetected obj)
+    private async void OnStopTruntable(StopTruntableDetected obj)
     {
         //Debug.Log(_turntableGenerics.Length);
         Array.ForEach(_turntableGenerics,ChoseTurntable => ChoseTurntable.OnChoseEvent());
+        _playerManager._playerActor._pointerManager.MoveSpeed = 0f;
+        await Task.Delay(800);
+        _playerManager._playerActor._pointerManager.MoveSpeed = -180f;
     }
 
     public void ReLoadEventTuntable()
