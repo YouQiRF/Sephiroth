@@ -1816,7 +1816,7 @@ PrefabInstance:
     - target: {fileID: 1836601550963556034, guid: fa88ddfb7896c434f8b6a0fe33e055a6,
         type: 3}
       propertyPath: AttackDamage
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3404898585173357980, guid: fa88ddfb7896c434f8b6a0fe33e055a6,
         type: 3}
@@ -1896,7 +1896,7 @@ PrefabInstance:
     - target: {fileID: 7519450582283883841, guid: fa88ddfb7896c434f8b6a0fe33e055a6,
         type: 3}
       propertyPath: AttackDamage
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8908286015582202926, guid: fa88ddfb7896c434f8b6a0fe33e055a6,
         type: 3}
@@ -1916,7 +1916,7 @@ PrefabInstance:
     - target: {fileID: 8908286015582202926, guid: fa88ddfb7896c434f8b6a0fe33e055a6,
         type: 3}
       propertyPath: AttackDamage
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa88ddfb7896c434f8b6a0fe33e055a6, type: 3}
@@ -4519,7 +4519,7 @@ GameObject:
   - component: {fileID: 1872442987}
   - component: {fileID: 1872442986}
   - component: {fileID: 1872442985}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Owl_AttackB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10171,7 +10171,7 @@ GameObject:
   - component: {fileID: 3570966546581282418}
   - component: {fileID: 3570966546581282421}
   - component: {fileID: 3570966546581282420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DefenseB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10251,7 +10251,7 @@ GameObject:
   - component: {fileID: 3570966546583846722}
   - component: {fileID: 3570966546583846725}
   - component: {fileID: 3570966546583846720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ResetPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10370,7 +10370,7 @@ GameObject:
   - component: {fileID: 3570966546588734904}
   - component: {fileID: 3570966546588734907}
   - component: {fileID: 3570966546588734906}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DefenseA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10435,7 +10435,7 @@ GameObject:
   - component: {fileID: 3570966546657735441}
   - component: {fileID: 3570966546657735440}
   - component: {fileID: 1081296603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wolf_DefenseB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10549,7 +10549,7 @@ GameObject:
   - component: {fileID: 3570966546756537282}
   - component: {fileID: 3570966546756537295}
   - component: {fileID: 3570966546756537294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Owl_OnHeal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10767,7 +10767,7 @@ GameObject:
   - component: {fileID: 3570966547087194465}
   - component: {fileID: 3570966547087194468}
   - component: {fileID: 3570966547087194464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wolf_AttackA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11022,7 +11022,7 @@ GameObject:
   - component: {fileID: 3570966547241353863}
   - component: {fileID: 3570966547241353862}
   - component: {fileID: 1081296606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wolf_DefenseA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11215,7 +11215,7 @@ GameObject:
   - component: {fileID: 3570966547437459617}
   - component: {fileID: 3570966547437459616}
   - component: {fileID: 3570966547437459620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wolf_AttackB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11263,7 +11263,7 @@ GameObject:
   - component: {fileID: 3570966547498702367}
   - component: {fileID: 3570966547498702365}
   - component: {fileID: 3570966547498702364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11715,7 +11715,7 @@ GameObject:
   - component: {fileID: 3570966547829651416}
   - component: {fileID: 3570966547829651419}
   - component: {fileID: 3570966547829651418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11854,6 +11854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SummonState: 0
+  EndPoint: 0
   Summoner:
   - {fileID: 7304477245545535920, guid: b408f4f3af5e0dd4f9a7f35721fc0075, type: 3}
   - {fileID: 9136667280452766704, guid: b661f5ad91a02cd49a02203155da1092, type: 3}
@@ -11862,6 +11863,7 @@ MonoBehaviour:
   SummonerTurntable:
   - {fileID: 3570966548446127501}
   - {fileID: 3570966547329543102}
+  turntable_outerring: {fileID: 81819913}
   SummonerOffset: {x: 6.59, y: -3.41, z: 0}
   TurntableOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &3570966548000148598
@@ -11952,7 +11954,7 @@ GameObject:
   - component: {fileID: 3570966548021840412}
   - component: {fileID: 3570966548021840410}
   - component: {fileID: 3570966548021840413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12060,7 +12062,7 @@ GameObject:
   - component: {fileID: 3570966548077650648}
   - component: {fileID: 3570966548077650651}
   - component: {fileID: 3570966548077650650}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SummonA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12160,7 +12162,7 @@ GameObject:
   - component: {fileID: 3570966548347278165}
   - component: {fileID: 3570966548347278164}
   - component: {fileID: 3570966548347278167}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SummonB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12328,7 +12330,7 @@ GameObject:
   - component: {fileID: 3570966548506511167}
   - component: {fileID: 3570966548506511166}
   - component: {fileID: 3570966548506511153}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Owl_AttackA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
