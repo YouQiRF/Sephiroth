@@ -48,7 +48,7 @@ public class ChangBookKind : BookSystem
         target_image.sprite = image;
         set_bool(false, false, true);
         is_text = false;
-        load =2;
+        load =3;
     }
 
 
