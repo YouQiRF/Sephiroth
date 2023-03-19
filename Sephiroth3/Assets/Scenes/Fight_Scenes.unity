@@ -4160,6 +4160,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map_system
       objectReference: {fileID: 0}
+    - target: {fileID: 3463730795531391692, guid: 3d4bbcce81ef2934db9df3d5ac7ed3bf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3463730795531391694, guid: 3d4bbcce81ef2934db9df3d5ac7ed3bf,
         type: 3}
       propertyPath: m_RootOrder
