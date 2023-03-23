@@ -112,7 +112,7 @@ public class Map_System : MonoBehaviour
                     //Debug.Log("Basic_level");
                     map_reader(false, true, false, false, false,false);
                     EventBus.Post(new RoundStartDetected());
-                    //MonsterInstantiate.OnInstantiateMonster();
+                    MonsterInstantiate.OnInstantiateMonster();
                     new_map = Random.Range(1, 5);
                     load_Map(new_map);
                     load_Map(new_map);
@@ -137,7 +137,7 @@ public class Map_System : MonoBehaviour
                     new_map = Random.Range(1, 5);
                     load_Map(new_map);
                     load_Map(new_map);
-                    //MonsterInstantiate.OnInstantiateMonster();
+                    MonsterInstantiate.OnInstantiateMonster();
                 }
                 if (roomcode == 0 && Map_level == 3)//小黑取得
                 {

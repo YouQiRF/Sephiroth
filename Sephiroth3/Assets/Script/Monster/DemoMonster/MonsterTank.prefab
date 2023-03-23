@@ -48,12 +48,13 @@ MonoBehaviour:
   EnemyNowHP: 0
   AttackCD: 0
   AttackCycle: 4
-  AttackDamage: 0
+  AttackDamage: 4
   PositionalOrder: 0
   IsDead: 0
   ShowHPimg: {fileID: 0}
   ShowHPNumber: 0
   CDTest: {fileID: 0}
+  AN: {fileID: 0}
 --- !u!1 &5656284312502282180
 GameObject:
   m_ObjectHideFlags: 0

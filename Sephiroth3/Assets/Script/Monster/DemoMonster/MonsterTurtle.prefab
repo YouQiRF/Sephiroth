@@ -149,7 +149,7 @@ MonoBehaviour:
   EnemyNowHP: 0
   AttackCD: 0
   AttackCycle: 1
-  AttackDamage: 0
+  AttackDamage: 2
   PositionalOrder: 0
   IsDead: 0
   ShowHPimg: {fileID: 0}
