@@ -11,19 +11,21 @@ public class WolfManager : SummonerManager
     }
     public override void OnSummoner()
     {
-        var location = FindObjectOfType<LocationManager>();
-        var addArmorValue = FindObjectOfType<PointerManager>();
-        _summonerFettle._hpData.ArmorValue += addArmorValue.NowRound;
-        if (location.PlayerLocation[0] != null)
+        GetNowRound();
+        _summonerFettle._hpData.ArmorValue += nowRound;
+        if (LocationManager.instance.PlayerLocation[0] != this._summonerFettle)
         {
-            location.PlayerLocation[3] = location.PlayerLocation[0];
-            location.PlayerLocation[4] = location.PlayerLocation[1];
-            location.PlayerLocation[0] = this.gameObject.GetComponent<FettleGeneric>();
-            location.PlayerLocation[1] = location.PlayerLocation[3];
-            location.PlayerLocation[2] = location.PlayerLocation[4];
+            
+            //Debug.Log("IsNullA");
+            LocationManager.instance.PlayerLocation[3] = LocationManager.instance.PlayerLocation[0];
+            LocationManager.instance.PlayerLocation[4] = LocationManager.instance.PlayerLocation[1];
+            LocationManager.instance.PlayerLocation[0] = this.gameObject.GetComponent<FettleGeneric>();
+            LocationManager.instance.PlayerLocation[1] = LocationManager.instance.PlayerLocation[3];
+            LocationManager.instance.PlayerLocation[2] = LocationManager.instance.PlayerLocation[4];
             for (int i = 0; i < 3; i++)
             {
-                location.PlayerLocation[i].StatyLocation = i;
+                //Debug.Log("IsNullB");
+                LocationManager.instance.PlayerLocation[i].StatyLocation = i;
             }
         }
     }

@@ -7,6 +7,14 @@ using UnityEngine;
 
 public class LocationManager : MonoBehaviour
 {
+    #region Instance
+    static public LocationManager instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+    #endregion
+    
     [SerializeField] public FettleGeneric[] PlayerLocation;
     [SerializeField] public int[] PlayerNowLocation;
     [SerializeField] public MonsterGeneric[] MonsterLocation;

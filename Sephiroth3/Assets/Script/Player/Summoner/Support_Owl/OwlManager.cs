@@ -11,9 +11,11 @@ public class OwlManager : SummonerManager
         _summonerFettle = FindObjectOfType<OwlFettle>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnSummoner()
     {
-        
+        GetNowRound();
+        var Player = FindObjectOfType<PlayerFettle>();
+        Player._hpData.NowHP += (nowRound + 1);
+        LocationManager.instance.PlayerLocation[Player.StatyLocation].GetHealEffect();
     }
 }

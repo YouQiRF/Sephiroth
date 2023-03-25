@@ -37,14 +37,13 @@ public class EventSummon : TurntableGeneric
     {
         var otherSummonerName = ThisNo == 1 ? "SummonB" : "SummonA";
         var thisSummonerName = ThisNo == 1 ? "TheSummonerA" : "TheSummonerB";
-        var locationM = FindObjectOfType<LocationManager>();
         var otherSummoner = GameObject.Find(otherSummonerName).GetComponent<EventSummon>();
         var targetIndex = otherSummoner.IsSummon ? 2 : 0;
         var thisSummonerManager = GameObject.Find(thisSummonerName).GetComponent<SummonerManager>();
         if (thisSummonerManager._summonerFettle._hpData.NowHP > 0)
         {
-            locationM.PlayerLocation[targetIndex] = GameObject.Find(thisSummonerName).GetComponent<FettleGeneric>();
-            locationM.PlayerLocation[targetIndex].StatyLocation = otherSummoner.IsSummon ? 2 : 0;
+            LocationManager.instance.PlayerLocation[targetIndex] = GameObject.Find(thisSummonerName).GetComponent<FettleGeneric>();
+            LocationManager.instance.PlayerLocation[targetIndex].StatyLocation = otherSummoner.IsSummon ? 2 : 0;
             IsSummon = true;
             thisSummonerManager.OnSummoner();
             SummonEvent();
