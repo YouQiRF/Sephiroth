@@ -116,6 +116,8 @@ public class GamePlayingManager : MonoBehaviour
 
     private void OnNewRound(NewRoundDetected obj)
     {
+        var Pointer = FindObjectOfType<PointerManager>();
+        Pointer.NowRound++;
         _playerManager._playerActor.changeState(new PlayerRound());
         _playerManager._playerActor.RemainingDefense = 3f;
         foreach (var VARIABLE in _MonsterGenerics)

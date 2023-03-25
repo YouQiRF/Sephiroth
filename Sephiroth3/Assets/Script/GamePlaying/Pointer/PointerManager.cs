@@ -9,10 +9,12 @@ public class PointerManager : MonoBehaviour
     [SerializeField] public bool IsRun;
 
     [SerializeField] public float MoveSpeed;
+
+    [SerializeField] public float NowRound;
     // Start is called before the first frame update
     void Start()
     {
-        
+        NowRound = -1;
     }
 
     // Update is called once per frame

@@ -28,6 +28,11 @@ public class SummonerManager : MonoBehaviour
     {
         
     }
-    
-    
+
+    public virtual void OnSummoner()
+    {
+        
+    }
+
+
 }

@@ -9,9 +9,22 @@ public class WolfManager : SummonerManager
         base.OnStart();
         _summonerFettle = FindObjectOfType<WolfFettle>();
     }
-
-    public override void OnTick()
+    public override void OnSummoner()
     {
-        base.OnTick();
+        var location = FindObjectOfType<LocationManager>();
+        var addArmorValue = FindObjectOfType<PointerManager>();
+        _summonerFettle._hpData.ArmorValue += addArmorValue.NowRound;
+        if (location.PlayerLocation[0] != null)
+        {
+            location.PlayerLocation[3] = location.PlayerLocation[0];
+            location.PlayerLocation[4] = location.PlayerLocation[1];
+            location.PlayerLocation[0] = this.gameObject.GetComponent<FettleGeneric>();
+            location.PlayerLocation[1] = location.PlayerLocation[3];
+            location.PlayerLocation[2] = location.PlayerLocation[4];
+            for (int i = 0; i < 3; i++)
+            {
+                location.PlayerLocation[i].StatyLocation = i;
+            }
+        }
     }
 }
