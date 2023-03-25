@@ -97,6 +97,13 @@ public class LocationManager : MonoBehaviour
         Creat_Effect_Player.instance.Creat(Creat_Effect_Player.instance.Shake_Camera_M,Creat_Effect_Player.instance.Buff_Hit_pos[0]);
         MusicManager.instance.PlayHit();
     }
+    
+    public void OtherAttackDetected(float DamageNumber,int AttackNumber)
+    {
+        MonsterLocation[AttackNumber].OnGitHit(DamageNumber);
+        Creat_Effect_Player.instance.Creat(Creat_Effect_Player.instance.Shake_Camera_M,Creat_Effect_Player.instance.Buff_Hit_pos[0]);
+        MusicManager.instance.PlayHit();
+    }
 
     private void StartSet()
     {
