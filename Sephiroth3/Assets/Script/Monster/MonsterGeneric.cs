@@ -20,8 +20,7 @@ public class MonsterGeneric : MonoBehaviour
     [SerializeField] public Image ShowHPimg;
     [SerializeField] public float ShowHPNumber;
     [Header("物件")] 
-    [SerializeField] private Text CDTest;
-
+    [SerializeField] private MonsterAttackUI CDUI;
     [SerializeField] private Animator AN;
     
     // Start is called before the first frame update
@@ -32,7 +31,7 @@ public class MonsterGeneric : MonoBehaviour
         
         AN = transform.GetChild(0).GetComponent<Animator>();
         HPUISet();
-        TextSet();
+        CDUIDetected();
         LocationCheck();
     }
 
@@ -40,7 +39,6 @@ public class MonsterGeneric : MonoBehaviour
     public virtual void Update()
     {
         ShowEnemyHP();
-        CDTest.text = "CD：" + AttackCD;
         if (IsDead)
         {
             transform.position = Vector3.Lerp(this.transform.position, new Vector3(15,-2,0), 0.05f);
@@ -63,6 +61,7 @@ public class MonsterGeneric : MonoBehaviour
                 AttackCD--;
             } 
         }
+        CDUIDetected();
     }
 
     public virtual void HPUISet()
@@ -83,27 +82,36 @@ public class MonsterGeneric : MonoBehaviour
             } 
         }
     }
-    
-    public void TextSet()
-    {
-        string FindText;
-        if (PositionalOrder == 0)
-        {
 
-            FindText = "CDA";
+    private void CDUIDetected()
+    {
+        if (AttackCD == 0)
+        {
+            CDUI.attackUI_Img.sprite = CDUI.attackUI_ChangeImg[0];
+            CDUI.ReadyAttack.SetActive(true);
+            CDUI.attackUI_CD.text = "";
         }
         else
         {
-            if (PositionalOrder == 1)
+            CDUI.ReadyAttack.SetActive(false);
+            CDUI.attackUI_CD.text = AttackCD + "";
+            if (AttackCD >= 3)
             {
-                FindText = "CDB";
+                CDUI.attackUI_Img.sprite = CDUI.attackUI_ChangeImg[3];
             }
             else
             {
-                FindText = "CDC";
-            } 
+                switch (AttackCD)
+                {
+                    case 2:
+                        CDUI.attackUI_Img.sprite = CDUI.attackUI_ChangeImg[2];
+                        break;
+                    case 1:
+                        CDUI.attackUI_Img.sprite = CDUI.attackUI_ChangeImg[1];
+                        break;
+                }
+            }
         }
-        CDTest = GameObject.Find(FindText).GetComponent<Text>();
     }
 
     public virtual void LocationCheck()
