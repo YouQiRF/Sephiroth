@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class MonsterGeneric : MonoBehaviour
 {
     [Header("數值")] 
+    [SerializeField] public int MonsterNumber;
     [SerializeField] public float EnemyMaxHP;
     [SerializeField] public float EnemyNowHP;
     [SerializeField] public int AttackCD;

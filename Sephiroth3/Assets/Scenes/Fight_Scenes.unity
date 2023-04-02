@@ -809,6 +809,11 @@ PrefabInstance:
       propertyPath: MonsterPos
       value: 
       objectReference: {fileID: 5260589356067688051}
+    - target: {fileID: 8925551818139687822, guid: 0b5671c39e319dd429cb7b4331afcab5,
+        type: 3}
+      propertyPath: imgOffset.y
+      value: -210
+      objectReference: {fileID: 0}
     - target: {fileID: 8925551818139687823, guid: 0b5671c39e319dd429cb7b4331afcab5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1449,84 +1454,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 987487573461714533}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &516851905
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 516851906}
-  - component: {fileID: 516851908}
-  - component: {fileID: 516851907}
-  m_Layer: 5
-  m_Name: CDB
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &516851906
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516851905}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1683647969}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 601, y: 151}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &516851907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516851905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 23
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: CD:-
---- !u!222 &516851908
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516851905}
-  m_CullTransparentMesh: 0
 --- !u!1 &523944416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,6 +2127,11 @@ PrefabInstance:
       propertyPath: MonsterPos
       value: 
       objectReference: {fileID: 6556041206376462108}
+    - target: {fileID: 8925551818139687822, guid: 0b5671c39e319dd429cb7b4331afcab5,
+        type: 3}
+      propertyPath: imgOffset.y
+      value: -210
+      objectReference: {fileID: 0}
     - target: {fileID: 8925551818139687823, guid: 0b5671c39e319dd429cb7b4331afcab5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2597,10 +2529,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1048494216}
+  - component: {fileID: 1048494219}
   - component: {fileID: 1048494218}
   - component: {fileID: 1048494217}
   m_Layer: 5
-  m_Name: Image
+  m_Name: MonsterImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2662,6 +2595,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048494215}
   m_CullTransparentMesh: 0
+--- !u!114 &1048494219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048494215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97942cb7f18f22b48849f027195b42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckNumber: 2
+  MonsterImage: {fileID: 0}
+  Avatar: {fileID: 11400000, guid: 6e56a0977b71a7546a26e439436e7ee4, type: 2}
 --- !u!1 &1058270187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,10 +2619,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1058270188}
+  - component: {fileID: 1058270191}
   - component: {fileID: 1058270190}
   - component: {fileID: 1058270189}
   m_Layer: 5
-  m_Name: Image
+  m_Name: MonsterImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2736,6 +2685,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058270187}
   m_CullTransparentMesh: 0
+--- !u!114 &1058270191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058270187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97942cb7f18f22b48849f027195b42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckNumber: 1
+  MonsterImage: {fileID: 0}
+  Avatar: {fileID: 11400000, guid: 6e56a0977b71a7546a26e439436e7ee4, type: 2}
 --- !u!1 &1070432100
 GameObject:
   m_ObjectHideFlags: 0
@@ -3342,84 +3306,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1274666420
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1274666421}
-  - component: {fileID: 1274666423}
-  - component: {fileID: 1274666422}
-  m_Layer: 5
-  m_Name: CDC
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1274666421
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274666420}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1683647969}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 615, y: 91}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1274666422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274666420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 23
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: CD:-
---- !u!222 &1274666423
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274666420}
-  m_CullTransparentMesh: 0
 --- !u!1 &1281800967
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,9 +4415,6 @@ RectTransform:
   - {fileID: 4696712867400109801}
   - {fileID: 4696712867024016100}
   - {fileID: 4696712866588448476}
-  - {fileID: 4696712865454572870}
-  - {fileID: 516851906}
-  - {fileID: 1274666421}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10227,6 +10110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34446b1b80b475444af65c627b6f102c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MonsterNumber: 0
   EnemyMaxHP: 18
   EnemyNowHP: 0
   AttackCD: 0
@@ -13020,84 +12904,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!222 &4696712865454572868
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4696712865454572871}
-  m_CullTransparentMesh: 0
---- !u!114 &4696712865454572869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4696712865454572871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 23
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: CD:-
---- !u!224 &4696712865454572870
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4696712865454572871}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1683647969}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 575, y: 213}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &4696712865454572871
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4696712865454572870}
-  - component: {fileID: 4696712865454572868}
-  - component: {fileID: 4696712865454572869}
-  m_Layer: 5
-  m_Name: CDA
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!222 &4696712865509662612
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15039,15 +14845,31 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4696712866860284740}
+  - component: {fileID: 4696712866860284742}
   - component: {fileID: 4696712866860284738}
   - component: {fileID: 4696712866860284739}
   m_Layer: 5
-  m_Name: Image
+  m_Name: MonsterImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4696712866860284742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696712866860284741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97942cb7f18f22b48849f027195b42c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckNumber: 0
+  MonsterImage: {fileID: 0}
+  Avatar: {fileID: 11400000, guid: 6e56a0977b71a7546a26e439436e7ee4, type: 2}
 --- !u!222 &4696712866905135208
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16803,6 +16625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055983794ba9dbf428a958aa7793c91c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MonsterNumber: 1
   EnemyMaxHP: 6
   EnemyNowHP: 0
   AttackCD: 0
@@ -19692,6 +19515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055983794ba9dbf428a958aa7793c91c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MonsterNumber: 1
   EnemyMaxHP: 6
   EnemyNowHP: 0
   AttackCD: 0
@@ -19825,6 +19649,11 @@ PrefabInstance:
       propertyPath: MonsterPos
       value: 
       objectReference: {fileID: 3146604311805172287}
+    - target: {fileID: 8925551818139687822, guid: 0b5671c39e319dd429cb7b4331afcab5,
+        type: 3}
+      propertyPath: imgOffset.y
+      value: -210
+      objectReference: {fileID: 0}
     - target: {fileID: 8925551818139687823, guid: 0b5671c39e319dd429cb7b4331afcab5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
