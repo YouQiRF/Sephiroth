@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 139732868}
   - component: {fileID: 139732867}
   m_Layer: 5
-  m_Name: Image
+  m_Name: HPBorders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -247,16 +247,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139732865}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.63016, y: 0.63016, z: 0.63016}
+  m_LocalScale: {x: 1.7967106, y: 1.7967106, z: 1.7967106}
   m_Children: []
-  m_Father: {fileID: 958842454}
-  m_RootOrder: 0
+  m_Father: {fileID: 4696712866992048976}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125, y: 82.7}
+  m_AnchoredPosition: {x: -0.28513336, y: 136.85748}
   m_SizeDelta: {x: 63.9, y: 255.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139732867
@@ -848,6 +848,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 354353342}
+  - component: {fileID: 354353343}
   m_Layer: 5
   m_Name: EnemyHPB
   m_TagString: Untagged
@@ -869,14 +870,28 @@ RectTransform:
   - {fileID: 1585000556}
   - {fileID: 523944417}
   - {fileID: 1058270188}
+  - {fileID: 1924112081}
   m_Father: {fileID: 4696712867400109801}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 176.8, y: 34.3}
+  m_AnchoredPosition: {x: 176.8, y: 136}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &354353343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354353341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c6b1f361e5368438f0ab875c5951d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThisNumber: 1
 --- !u!1 &355270891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,44 +2349,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &958842453
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 958842454}
-  m_Layer: 5
-  m_Name: EnemyHP
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &958842454
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958842453}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 139732866}
-  - {fileID: 1924112081}
-  - {fileID: 1915586652}
-  m_Father: {fileID: 4696712867400109801}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1024395318
 GameObject:
   m_ObjectHideFlags: 0
@@ -4293,6 +4270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1676955282}
+  - component: {fileID: 1676955283}
   m_Layer: 5
   m_Name: EnemyHPC
   m_TagString: Untagged
@@ -4314,14 +4292,28 @@ RectTransform:
   - {fileID: 1389238799}
   - {fileID: 1778178242}
   - {fileID: 1048494216}
+  - {fileID: 1915586652}
   m_Father: {fileID: 4696712867400109801}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230.3, y: 34.8}
+  m_AnchoredPosition: {x: 230.3, y: 136.49998}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1676955283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676955281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c6b1f361e5368438f0ab875c5951d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThisNumber: 2
 --- !u!1 &1683647965
 GameObject:
   m_ObjectHideFlags: 0
@@ -4812,7 +4804,7 @@ GameObject:
   - component: {fileID: 1915586654}
   - component: {fileID: 1915586653}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: HPBorders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4825,16 +4817,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915586651}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.63016, y: 0.63016, z: 0.63016}
+  m_LocalScale: {x: 1.7967106, y: 1.7967106, z: 1.7967106}
   m_Children: []
-  m_Father: {fileID: 958842454}
-  m_RootOrder: 2
+  m_Father: {fileID: 1676955282}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230.2, y: 82.7}
+  m_AnchoredPosition: {x: -0.2851715, y: 136.57234}
   m_SizeDelta: {x: 63.9, y: 255.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915586653
@@ -4886,7 +4878,7 @@ GameObject:
   - component: {fileID: 1924112083}
   - component: {fileID: 1924112082}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: HPBorders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4899,16 +4891,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924112080}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.63016, y: 0.63016, z: 0.63016}
+  m_LocalScale: {x: 1.7967106, y: 1.7967106, z: 1.7967106}
   m_Children: []
-  m_Father: {fileID: 958842454}
-  m_RootOrder: 1
+  m_Father: {fileID: 354353342}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 176.6, y: 82.7}
+  m_AnchoredPosition: {x: -0.5702667, y: 137.99792}
   m_SizeDelta: {x: 63.9, y: 255.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1924112082
@@ -15212,12 +15204,13 @@ RectTransform:
   - {fileID: 4696712865527925751}
   - {fileID: 4696712866320863269}
   - {fileID: 4696712866860284740}
+  - {fileID: 139732866}
   m_Father: {fileID: 4696712867400109801}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125.1, y: 34.7}
+  m_AnchoredPosition: {x: 125.1, y: 136.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4696712866992048977
@@ -15229,6 +15222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4696712866992048976}
+  - component: {fileID: 4696712866992048978}
   m_Layer: 5
   m_Name: EnemyHPA
   m_TagString: Untagged
@@ -15236,6 +15230,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4696712866992048978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696712866992048977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c6b1f361e5368438f0ab875c5951d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThisNumber: 0
 --- !u!222 &4696712867009866746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15998,7 +16005,6 @@ RectTransform:
   - {fileID: 4696712866694113839}
   - {fileID: 4696712865867599791}
   - {fileID: 4696712865820143046}
-  - {fileID: 958842454}
   m_Father: {fileID: 1683647969}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16499,7 +16505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &6556041206775203782
 SpriteRenderer:
   m_ObjectHideFlags: 0
