@@ -5398,6 +5398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _summonerFettle: {fileID: 0}
+  thisNumber: 0
   nowRound: 0
 --- !u!114 &792597228691677486
 MonoBehaviour:
@@ -10170,6 +10171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _summonerFettle: {fileID: 0}
+  thisNumber: 0
   nowRound: 0
 --- !u!114 &2364825290267744541
 MonoBehaviour:
@@ -13229,7 +13231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -111.5, y: 41}
+  m_AnchoredPosition: {x: -111.5, y: 141}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4696712865820143047
@@ -13241,6 +13243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4696712865820143046}
+  - component: {fileID: 4696712865820143048}
   m_Layer: 5
   m_Name: SummonerHPB
   m_TagString: Untagged
@@ -13248,6 +13251,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4696712865820143048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696712865820143047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a71095d568f4d3c448c5ac7bffaf4947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  isSummonerA: 0
+  summonerName: 
+  checkHP: {fileID: 0}
 --- !u!222 &4696712865854661482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13360,7 +13379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -165.6, y: 39.6}
+  m_AnchoredPosition: {x: -165.6, y: 139.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4696712865867599824
@@ -13372,6 +13391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4696712865867599791}
+  - component: {fileID: 4696712865867599825}
   m_Layer: 5
   m_Name: SummonerHPA
   m_TagString: Untagged
@@ -13379,6 +13399,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4696712865867599825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696712865867599824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a71095d568f4d3c448c5ac7bffaf4947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  isSummonerA: 1
+  summonerName: 
+  checkHP: {fileID: 0}
 --- !u!114 &4696712865891091529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14477,7 +14513,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224, y: 40}
+  m_AnchoredPosition: {x: -224, y: 140}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4696712866694113872
@@ -14489,6 +14525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4696712866694113839}
+  - component: {fileID: 4696712866694113873}
   m_Layer: 5
   m_Name: PlayerHP
   m_TagString: Untagged
@@ -14496,6 +14533,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4696712866694113873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696712866694113872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a71095d568f4d3c448c5ac7bffaf4947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 1
+  isSummonerA: 0
+  summonerName: 
+  checkHP: {fileID: 0}
 --- !u!222 &4696712866699867443
 CanvasRenderer:
   m_ObjectHideFlags: 0

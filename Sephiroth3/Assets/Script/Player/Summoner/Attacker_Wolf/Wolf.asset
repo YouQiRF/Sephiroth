@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowPlayerHP: {fileID: 0}
   ShowPlayerArmor: {fileID: 0}
-  ShowHPFloat: 0.7222222
+  ShowHPFloat: 0
   ShowArmorFloat: 0.33333334
   MaxHP: 18
-  NowHP: 18
+  NowHP: 10
   ArmorValue: 3
   ArmorDefense: 2

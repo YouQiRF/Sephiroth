@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class SummonerManager : MonoBehaviour
 {
     [SerializeField] public FettleGeneric _summonerFettle;
+    [SerializeField] public int thisNumber;
     [SerializeField] public float nowRound;
 
     // Start is called before the first frame update
