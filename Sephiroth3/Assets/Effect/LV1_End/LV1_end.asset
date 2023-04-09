@@ -17,7 +17,7 @@ MonoBehaviour:
   - {fileID: 5182968221542415213, guid: ea76ecfbb8d1b1941b76fd482f1ac91d, type: 3}
   - {fileID: 762326944587749813, guid: d2e82b71d7c9d8644826e79ce89baac2, type: 3}
   Showtime:
-  - 3
-  - 3
-  - 2.5
+  - 4
+  - 4
+  - 4
   Load_scenes_nul: 0
