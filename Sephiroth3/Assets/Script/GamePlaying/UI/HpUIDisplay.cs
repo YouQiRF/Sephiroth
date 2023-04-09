@@ -21,7 +21,14 @@ public class HpUIDisplay : MonoBehaviour
             summonerName = "TheSummonerB";
         }
 
-        checkHP = GameObject.Find(summonerName).GetComponent<FettleGeneric>();
+        if (!isPlayer)
+        {
+            checkHP = GameObject.Find(summonerName).GetComponent<FettleGeneric>();
+        }
+        else
+        {
+            checkHP = GameObject.Find("PlayerManager").GetComponent<FettleGeneric>();
+        }
     }
 
     // Update is called once per frame
