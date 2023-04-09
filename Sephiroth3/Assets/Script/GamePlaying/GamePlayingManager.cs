@@ -10,9 +10,10 @@ using UnityEngine.SceneManagement;
 
 public class GamePlayingManager : MonoBehaviour
 {
+    [SerializeField] private int LVNumber;
+    [SerializeField] private bool isStop;
     [SerializeField] private PlayerManager _playerManager;
     [SerializeField] private TurntableGeneric[] _turntableGenerics;
-    
     [SerializeField] public MonsterGeneric[] _MonsterGenerics;
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,18 @@ public class GamePlayingManager : MonoBehaviour
         OnStart();
         _MonsterGenerics = FindObjectsOfType<MonsterGeneric>();
         _playerManager = FindObjectOfType<PlayerManager>();
+        if (LVNumber != 2)
+        {
+            StopGame();
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            StopGame();
+        }
     }
 
     private void EventLoad()
@@ -54,6 +67,22 @@ public class GamePlayingManager : MonoBehaviour
 
     }
 
+    private void StopGame()
+    {
+        var Pointer = FindObjectOfType<PointerManager>();
+        var PointerShow = GameObject.Find("UIPointer").GetComponent<PointerUI>();
+        if (!isStop)
+        {
+            _playerManager._playerActor._pointerManager.MoveSpeed = 0f;
+            isStop = true;
+        }
+        else
+        {
+            _playerManager._playerActor._pointerManager.MoveSpeed = -180f;
+            isStop = false;
+        }
+    }
+
     private void OnFightStart(RoundStartDetected obj)
     {
         //ReLoadEventMonster();
@@ -77,10 +106,20 @@ public class GamePlayingManager : MonoBehaviour
         PointerShow.MoveSpeed = 0f;
         PlayerWin.OnPlayerWin();
 
-        await Task.Delay(2500);
-        
-        Destroy(GameObject.FindWithTag("Build"));
-        map_time.is_map_time = true;
+        switch (LVNumber)
+        {
+            case 0:
+                Debug.Log("AAA");
+                break;
+            case 1:
+                Debug.Log("BBB");
+                break;
+            case 2:
+                await Task.Delay(2500);
+                Destroy(GameObject.FindWithTag("Build"));
+                map_time.is_map_time = true;
+                break;
+        }
     }
 
     private async void OnPlayerDead(PlayerDeadDetected obj)
@@ -128,13 +167,16 @@ public class GamePlayingManager : MonoBehaviour
     }
     private async void OnStopTruntable(StopTruntableDetected obj)
     {
-        var turntable = FindObjectOfType<TurntableManager>();
-        //Debug.Log(_turntableGenerics.Length);
-        Array.ForEach(_turntableGenerics,ChoseTurntable => ChoseTurntable.OnChoseEvent());
-        _playerManager._playerActor._pointerManager.MoveSpeed = 0f;
-        turntable.ChangeAngle();
-        await Task.Delay(800);
-        _playerManager._playerActor._pointerManager.MoveSpeed = -180f;
+        if (!isStop)
+        {
+            var turntable = FindObjectOfType<TurntableManager>();
+            //Debug.Log(_turntableGenerics.Length);
+            Array.ForEach(_turntableGenerics,ChoseTurntable => ChoseTurntable.OnChoseEvent());
+            _playerManager._playerActor._pointerManager.MoveSpeed = 0f;
+            turntable.ChangeAngle();
+            await Task.Delay(800);
+            _playerManager._playerActor._pointerManager.MoveSpeed = -180f;
+        }
     }
 
     public void ReLoadEventTuntable()
