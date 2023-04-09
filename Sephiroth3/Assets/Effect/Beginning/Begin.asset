@@ -16,7 +16,6 @@ MonoBehaviour:
   - {fileID: 5346121970238129788, guid: 09c9a1371e083f740b3f6ee69b4aea0f, type: 3}
   - {fileID: 5905307261020727401, guid: 435f89b062d3b81408dc7e44b0610638, type: 3}
   - {fileID: 3295270422653975260, guid: 76a5a9b250aa68e4d9f020e891bda9f9, type: 3}
-  - {fileID: 8700449711481921063, guid: 26e9461cf3626654e8d252bd733e170f, type: 3}
   - {fileID: 1354490537846166478, guid: a87f21fa6517bd8479de98a9b025f8c6, type: 3}
   - {fileID: 590695034890504929, guid: 28ee592a74c6c344eb071d1081c7286e, type: 3}
   - {fileID: 5671666587800036485, guid: cd4feac091dfa314e8289cd64593eb70, type: 3}
@@ -24,8 +23,7 @@ MonoBehaviour:
   - 2
   - 1
   - 2
-  - 1
   - 2
-  - 1
+  - 1.3
   - 2
   Load_scenes_nul: 4
