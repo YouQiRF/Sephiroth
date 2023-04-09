@@ -5,7 +5,7 @@ using UnityEngine;
 public class MonsterHPUIDisplay : MonoBehaviour
 {
     [SerializeField] private int ThisNumber;
-    //[SerializeField] private float offset;
+    [SerializeField] private float offset;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +18,12 @@ public class MonsterHPUIDisplay : MonoBehaviour
         if (LocationManager.instance.MonsterLocation[ThisNumber] == null)
         {
             this.transform.position = Vector3.Lerp(transform.position,
-                new Vector3(this.transform.position.x, 1200, this.transform.position.z), 0.02f);
+                new Vector3(this.transform.position.x, 750, this.transform.position.z), 0.02f);
         }
         else
         {
             this.transform.position = Vector3.Lerp(transform.position,
-                new Vector3(this.transform.position.x, 850, this.transform.position.z), 0.05f);
+                new Vector3(this.transform.position.x, offset, this.transform.position.z), 0.05f);
         }
     }
 }

@@ -812,7 +812,7 @@ PrefabInstance:
     - target: {fileID: 8925551818139687822, guid: 0b5671c39e319dd429cb7b4331afcab5,
         type: 3}
       propertyPath: imgOffset.y
-      value: -210
+      value: -105
       objectReference: {fileID: 0}
     - target: {fileID: 8925551818139687823, guid: 0b5671c39e319dd429cb7b4331afcab5,
         type: 3}
@@ -892,6 +892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ThisNumber: 1
+  offset: 375
 --- !u!1 &355270891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,7 +2146,7 @@ PrefabInstance:
     - target: {fileID: 8925551818139687822, guid: 0b5671c39e319dd429cb7b4331afcab5,
         type: 3}
       propertyPath: imgOffset.y
-      value: -210
+      value: -105
       objectReference: {fileID: 0}
     - target: {fileID: 8925551818139687823, guid: 0b5671c39e319dd429cb7b4331afcab5,
         type: 3}
@@ -4314,6 +4315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ThisNumber: 2
+  offset: 375
 --- !u!1 &1683647965
 GameObject:
   m_ObjectHideFlags: 0
@@ -13267,6 +13269,7 @@ MonoBehaviour:
   isSummonerA: 0
   summonerName: 
   checkHP: {fileID: 0}
+  offset: 375
 --- !u!222 &4696712865854661482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13415,6 +13418,7 @@ MonoBehaviour:
   isSummonerA: 1
   summonerName: 
   checkHP: {fileID: 0}
+  offset: 375
 --- !u!114 &4696712865891091529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14549,6 +14553,7 @@ MonoBehaviour:
   isSummonerA: 0
   summonerName: 
   checkHP: {fileID: 0}
+  offset: 375
 --- !u!222 &4696712866699867443
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15312,6 +15317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ThisNumber: 0
+  offset: 375
 --- !u!222 &4696712867009866746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19742,8 +19748,13 @@ PrefabInstance:
       objectReference: {fileID: 3146604311805172287}
     - target: {fileID: 8925551818139687822, guid: 0b5671c39e319dd429cb7b4331afcab5,
         type: 3}
+      propertyPath: imgOffset.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8925551818139687822, guid: 0b5671c39e319dd429cb7b4331afcab5,
+        type: 3}
       propertyPath: imgOffset.y
-      value: -210
+      value: -105
       objectReference: {fileID: 0}
     - target: {fileID: 8925551818139687823, guid: 0b5671c39e319dd429cb7b4331afcab5,
         type: 3}

@@ -277,7 +277,7 @@ RectTransform:
   m_GameObject: {fileID: 8925551818139687820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.86159635, y: 0.86159635, z: 0.86159635}
+  m_LocalScale: {x: 0.524402, y: 0.524402, z: 0.524402}
   m_Children:
   - {fileID: 8925551818331106429}
   - {fileID: 8925551817384946853}
@@ -311,7 +311,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f86feb7f582335e488780a462cbb57e0, type: 3}
   ReadyAttack: {fileID: 8925551817845853299}
   MonsterPos: {fileID: 0}
-  imgOffset: {x: 13.3, y: -95.65, z: 0}
+  imgOffset: {x: 10, y: -105, z: 0}
 --- !u!1 &8925551818331106370
 GameObject:
   m_ObjectHideFlags: 0
