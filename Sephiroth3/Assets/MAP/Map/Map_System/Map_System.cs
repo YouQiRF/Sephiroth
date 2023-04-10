@@ -175,11 +175,14 @@ public class Map_System : MonoBehaviour
     {
         if (map_time.is_map_time)
         {
-            if (Map_level == 10)
+            if (Boss_map)
             {
                 SceneManager.LoadScene(9);
             }
-            SceneManager.LoadScene(4);
+            else
+            {
+                SceneManager.LoadScene(4);
+            }
         }
     }
 }
