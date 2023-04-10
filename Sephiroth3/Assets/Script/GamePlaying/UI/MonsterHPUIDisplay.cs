@@ -22,8 +22,8 @@ public class MonsterHPUIDisplay : MonoBehaviour
         }
         else
         {
-            this.transform.position = Vector3.Lerp(transform.position,
-                new Vector3(this.transform.position.x, offset, this.transform.position.z), 0.05f);
+            /*this.transform.position = Vector3.Lerp(transform.position,
+                new Vector3(this.transform.position.x, offset, this.transform.position.z), 0.05f);*/
         }
     }
 }

@@ -10,7 +10,7 @@ public class MonsterAttackUI : MonoBehaviour
     [SerializeField] public Sprite[] attackUI_ChangeImg;
     [SerializeField] public GameObject ReadyAttack;
     [SerializeField] public Transform MonsterPos;
-    [SerializeField] private Vector3 imgOffset;
+    //[SerializeField] private Vector3 imgOffset;
     
     //[SerializeField] private int i;
     // Start is called before the first frame update
@@ -19,18 +19,20 @@ public class MonsterAttackUI : MonoBehaviour
         //i = 0;
         ReadyAttack.SetActive(false);
         attackUI_Img = this.transform.GetChild(0).GetComponent<Image>();
+        Follow();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Follow();
+        
     }
     
     private void Follow()
     {
         Vector3 ScreenPos = Camera.main.WorldToScreenPoint(MonsterPos.position);
-        this.transform.position = ScreenPos + imgOffset;
+        this.transform.position = ScreenPos;
+        //+ imgOffset
     }
 
     /*if (Input.GetKeyDown(KeyCode.Space))
