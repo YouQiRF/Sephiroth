@@ -110,7 +110,7 @@ public class Map_System : MonoBehaviour
                 if (roomcode == 0) //一般戰鬥
                 {
                     //Debug.Log("Basic_level");
-                    map_reader(false, true, false, false, false,false);
+                    map_reader(false, true, false, false, false, false);
                     EventBus.Post(new RoundStartDetected());
                     MonsterInstantiate.OnInstantiateMonster();
                     new_map = Random.Range(1, 5);
@@ -120,7 +120,7 @@ public class Map_System : MonoBehaviour
                 }
                 if (roomcode == 1)//恢復點
                 {
-                    map_reader(false, false, false, true, false,false);
+                    map_reader(false, false, false, true, false, false);
                     new_map = Random.Range(1, 5);
                     load_Map(new_map);
                     load_Map(new_map);
@@ -132,7 +132,7 @@ public class Map_System : MonoBehaviour
                 if (roomcode == 2) //Boss房間
                 {
                     //Debug.Log("Boss_level");
-                    map_reader(false, false, false, false, true,false);
+                    map_reader(false, false, false, false, true, false);
                     EventBus.Post(new RoundStartDetected());
                     new_map = Random.Range(1, 5);
                     load_Map(new_map);
@@ -141,7 +141,7 @@ public class Map_System : MonoBehaviour
                 }
                 if (roomcode == 0 && Map_level == 3)//小黑取得
                 {
-                    map_reader(false, false, true, false, false,false);
+                    map_reader(false, false, true, false, false, false);
                     load_Map(5);
                     load_Map(5);
                     Map_level++;
@@ -149,7 +149,7 @@ public class Map_System : MonoBehaviour
                 if (roomcode == 4) //菁英戰鬥
                 {
                     //Debug.Log("Elite_Enemy");
-                    map_reader(false, false, false, false, false,true);
+                    map_reader(false, false, false, false, false, true);
                     EventBus.Post(new RoundStartDetected());
                     MonsterInstantiate.OnInstantiateMonster();
                     new_map = Random.Range(1, 5);
@@ -175,6 +175,10 @@ public class Map_System : MonoBehaviour
     {
         if (map_time.is_map_time)
         {
+            if (Map_level == 10)
+            {
+                SceneManager.LoadScene(9);
+            }
             SceneManager.LoadScene(4);
         }
     }
