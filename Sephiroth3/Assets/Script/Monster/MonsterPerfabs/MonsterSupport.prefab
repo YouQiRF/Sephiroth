@@ -151,7 +151,7 @@ MonoBehaviour:
   EnemyMaxHP: 8
   EnemyNowHP: 0
   AttackCD: 0
-  AttackCycle: 3
+  AttackCycle: 2
   AttackDamage: 2
   PositionalOrder: 2
   IsDead: 0

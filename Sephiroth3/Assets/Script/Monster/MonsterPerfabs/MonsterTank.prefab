@@ -80,8 +80,8 @@ MonoBehaviour:
   EnemyMaxHP: 24
   EnemyNowHP: 0
   AttackCD: 4
-  AttackCycle: 6
-  AttackDamage: 5
+  AttackCycle: 3
+  AttackDamage: 4
   PositionalOrder: 0
   IsDead: 0
   ShowHPimg: {fileID: 0}
