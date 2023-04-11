@@ -9,7 +9,7 @@ public class ChangeImage_Monster : MonoBehaviour
 {
     [SerializeField] private int CheckNumber;
     [SerializeField] private Image MonsterImage;
-    [SerializeField] private AvatarData Avatar;
+    [SerializeField] private OtherObjData Avatar;
     // Start is called before the first frame update
     void Start()
     {

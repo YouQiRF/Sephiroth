@@ -28,10 +28,6 @@ public class GamePlayingManager : MonoBehaviour
         OnStart();
         _MonsterGenerics = FindObjectsOfType<MonsterGeneric>();
         _playerManager = FindObjectOfType<PlayerManager>();
-        if (LVNumber != 2)
-        {
-            StopGame();
-        }
     }
 
     private void Update()
@@ -67,7 +63,7 @@ public class GamePlayingManager : MonoBehaviour
 
     }
 
-    private void StopGame()
+    public void StopGame()
     {
         var Pointer = FindObjectOfType<PointerManager>();
         var PointerShow = GameObject.Find("UIPointer").GetComponent<PointerUI>();
@@ -109,10 +105,12 @@ public class GamePlayingManager : MonoBehaviour
         switch (LVNumber)
         {
             case 0:
-                Debug.Log("AAA");
+                await Task.Delay(2500);
+                SceneManager.LoadScene("TeachingB");
                 break;
             case 1:
-                Debug.Log("BBB");
+                await Task.Delay(2500);
+                SceneManager.LoadScene("MainScenes");
                 break;
             case 2:
                 await Task.Delay(2500);

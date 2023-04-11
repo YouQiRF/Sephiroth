@@ -9,7 +9,7 @@ public class ChangeImage_Summoner : MonoBehaviour
 {
     [SerializeField] private bool isSummonerA;
     [SerializeField] private Image summonerImage;
-    [SerializeField] private AvatarData Avatar;
+    [SerializeField] private OtherObjData Avatar;
     // Start is called before the first frame update
     void Start()
     {

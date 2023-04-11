@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonsterNumber: 0
-  EnemyMaxHP: 4
+  EnemyMaxHP: 6
   EnemyNowHP: 0
   AttackCD: 0
   AttackCycle: 1

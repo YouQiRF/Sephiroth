@@ -77,11 +77,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonsterNumber: 1
-  EnemyMaxHP: 15
+  EnemyMaxHP: 9
   EnemyNowHP: 0
   AttackCD: 0
   AttackCycle: 4
-  AttackDamage: 5
+  AttackDamage: 3
   PositionalOrder: 0
   IsDead: 0
   ShowHPimg: {fileID: 0}

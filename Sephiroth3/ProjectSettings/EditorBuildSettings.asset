@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LV1_ending.unity
     guid: 3b8d27c39e93cad4ebadc0e60c82c230
+  - enabled: 1
+    path: Assets/Scenes/TeachingA.unity
+    guid: 1cf381ccb3792fd4893fb98a5de9c4ac
+  - enabled: 1
+    path: Assets/Scenes/TeachingB.unity
+    guid: 8c119ed65555a7149be47be309eab487
   m_configObjects: {}
