@@ -20,10 +20,7 @@ public class Chang_BGM : MonoBehaviour
     void chang(int a)
     {
         SetAudio.audioNum = a;
-        if (Map_System.Boss_map)
-        {
-            SetAudio.audioNum = 2;
-        }
+        
         SetAudio.play_BGM = true;
     }
 }
