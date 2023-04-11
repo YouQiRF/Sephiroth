@@ -45,7 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Setaudio:
-  - {fileID: 8300000, guid: 7c4811a2b52902e48aa37bf850a3e1a1, type: 3}
+  - {fileID: 8300000, guid: 5662beb63372bd041a4417d1a195cd94, type: 3}
+  - {fileID: 8300000, guid: d9836813606ab0548869d25e00ae6165, type: 3}
+  - {fileID: 8300000, guid: 7582da598d630f64e82489f8520a22ee, type: 3}
+  - {fileID: 8300000, guid: bfdd5af0fc150924bb97c60738e85e55, type: 3}
   BGM_Audio: {fileID: -1704411381346998114}
   is_audio_play: 0
 --- !u!82 &-1704411381346998114
@@ -58,7 +61,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7c4811a2b52902e48aa37bf850a3e1a1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5662beb63372bd041a4417d1a195cd94, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

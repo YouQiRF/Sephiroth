@@ -17,10 +17,4 @@ public class Creat_SetSound : MonoBehaviour
         }
 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

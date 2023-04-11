@@ -8,14 +8,6 @@ using Project.Begin_Data;
 
 public class Begin_AN : MonoBehaviour
 {
-   /* [Header("畫面物件")]
-    [SerializeField] public GameObject[] BeginAN;
-    [Header("畫面持續時間")]
-    [SerializeField] public int[] BeginANTime;
-    [Header("切換Scenes")]
-    [SerializeField] public int scenenum;*/
-    // Start is called before the first frame update
-
     [SerializeField] public Begin_Data _begin_Data;
     void Start()
     {

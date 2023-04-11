@@ -15,6 +15,8 @@ public class SetAudio : MonoBehaviour
     [SerializeField] public AudioSource BGM_Audio;
     [Header("是否關閉音樂音效")]
     [SerializeField] public bool is_audio_play = false;
+
+    public static bool play_BGM = false;
     void Start()
     {
         DontDestroyOnLoad(this);
@@ -25,6 +27,7 @@ public class SetAudio : MonoBehaviour
         BGM_Audio.volume = SetAudioVal.Sound_Val;
         //Debug.Log(BGM_Audio.volume);
         is_play();
+        play_audio();
     }
 
     void is_play()
@@ -33,6 +36,14 @@ public class SetAudio : MonoBehaviour
         {
             BGM_Audio.mute = true;
         }
-        else { BGM_Audio.mute = false;}
+        else { BGM_Audio.mute = false; }
+    }
+    void play_audio()
+    {
+        if (play_BGM)
+        {
+            BGM_Audio.Play();
+            play_BGM = false;
+        }
     }
 }
