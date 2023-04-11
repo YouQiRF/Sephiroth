@@ -140,7 +140,12 @@ public class MonsterGeneric : MonoBehaviour
             nowLocation.CheckSurvivalEnemy();
         }
     }
-
+    
+    public void GetHealEffect()
+    {
+        Creat_Effect_Player.instance.Creat(Creat_Effect_Player.instance.Buff_Recover,transform.GetChild(0).gameObject);
+        MusicManager.instance.PlayHeal();
+    }
     public virtual void ShowEnemyHP()
     {
         EnemyNowHP = Mathf.Clamp(EnemyNowHP, 0, EnemyMaxHP);
