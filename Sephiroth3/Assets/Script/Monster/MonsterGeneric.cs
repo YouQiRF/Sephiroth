@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Project;
 using Project.Event;
 using Project.MonsterData;
@@ -25,15 +26,16 @@ public class MonsterGeneric : MonoBehaviour
     [SerializeField] private Animator AN;
     
     // Start is called before the first frame update
-    public virtual void Start()
+    public async virtual void Start()
     {
         AttackCD = AttackCycle;
         EnemyNowHP = EnemyMaxHP;
         
         AN = transform.GetChild(0).GetComponent<Animator>();
         HPUISet();
-        CDUIDetected();
         LocationCheck();
+        await Task.Delay(300);
+        CDUIDetected();
     }
 
     // Update is called once per frame
@@ -48,13 +50,13 @@ public class MonsterGeneric : MonoBehaviour
 
     public virtual void OnPassRound()
     {
-        var StrikeTarget = FindObjectOfType<LocationManager>();
+        
         if (!IsDead)
         {
             if (AttackCD == 0)
             {
                 AttackCD = AttackCycle;
-                StrikeTarget.PlayerOnAttackDetected(AttackDamage);
+                AttackBehaviour();
                 AN.Play("OnAttack");
             }
             else
@@ -63,6 +65,12 @@ public class MonsterGeneric : MonoBehaviour
             } 
         }
         CDUIDetected();
+    }
+
+    public virtual void AttackBehaviour()
+    {
+        var StrikeTarget = FindObjectOfType<LocationManager>();
+        StrikeTarget.PlayerOnAttackDetected(AttackDamage);
     }
 
     public virtual void HPUISet()

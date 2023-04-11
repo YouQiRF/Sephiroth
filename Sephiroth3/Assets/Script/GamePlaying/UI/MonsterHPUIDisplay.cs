@@ -18,7 +18,7 @@ public class MonsterHPUIDisplay : MonoBehaviour
         if (LocationManager.instance.MonsterLocation[ThisNumber] == null)
         {
             this.transform.position = Vector3.Lerp(transform.position,
-                new Vector3(this.transform.position.x, 750, this.transform.position.z), 0.02f);
+                new Vector3(this.transform.position.x, 1200, this.transform.position.z), 0.02f);
         }
         else
         {

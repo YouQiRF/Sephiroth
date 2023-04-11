@@ -19,13 +19,12 @@ public class MonsterAttackUI : MonoBehaviour
         //i = 0;
         ReadyAttack.SetActive(false);
         attackUI_Img = this.transform.GetChild(0).GetComponent<Image>();
-        Follow();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Follow();
     }
     
     private void Follow()
