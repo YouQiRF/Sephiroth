@@ -30,7 +30,7 @@ public class Shake_Attack : MonoBehaviour
 
     IEnumerator Shaking()
     {
-        Vector3 startPosition = Camera.main.transform.position;
+        Vector3 startPosition =new Vector3(0,0,-12);
         float elapsedTime = 0f;
 
         while (elapsedTime < duration)
