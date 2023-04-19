@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameing_Setting_scene.unity
     guid: 9f710ca1aab3c0d4abca03813d9b2405
   - enabled: 1
+    path: Assets/Scenes/Setting_G.unity
+    guid: 6061fbbc2f2b27d4087dce6a5d96c6f9
+  - enabled: 0
     path: Assets/Scenes/Setting_gameing.unity
     guid: 4f5764f9579c30c48804f11f03f9ca5d
   - enabled: 1
