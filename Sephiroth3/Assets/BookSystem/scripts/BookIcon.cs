@@ -6,12 +6,9 @@ using UnityEngine.UI;
 
 public class BookIcon : MonoBehaviour
 {
-    public Text text;
+    public Image image;
     public Book_Data _book_Data;
-    public Button play_button;
-    public Button enemy_button;
-    public Button turntable_button;
-    [SerializeField] public GameObject Text_object;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,9 +24,9 @@ public class BookIcon : MonoBehaviour
     public void Click_Show_interduction(int num)
     {
         BookSystem.is_text = true;
-        text.text = ""+_book_Data.text[num];
+        image.sprite = _book_Data.image[num];
     }
-    public void Click_Hide_interduction()
+   /* public void Click_Hide_interduction()
     {
         if (ChangBookKind.load == 1)
         {
@@ -45,5 +42,5 @@ public class BookIcon : MonoBehaviour
         }
         Text_object.SetActive(false);
 
-    }
+    }*/
 }

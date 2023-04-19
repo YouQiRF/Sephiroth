@@ -12,24 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75ebee1f4f141646a5d43337f394cd5, type: 3}
   m_Name: Enemy
   m_EditorClassIdentifier: 
-  text:
-  - "                          <b>\u300ADMES-T\u300B</b>                   \u8840\u91CF\uFF1A10                                               
-    \u884C\u52D5\uFF1A\u5C0D\u6575\u65B9\u7B2C\u4E00\u4F4D\u9020\u6210\u30104\u3011\u50B7\u5BB3                            
-    CD\uFF1A3"
-  - "                          <b>\u300ADMES-P\u300B</b>                   \u8840\u91CF\uFF1A15                                               
-    \u884C\u52D5\uFF1A\u5C0D\u6575\u65B9\u7B2C\u4E00\u4F4D\u9020\u6210\u30105\u3011\u50B7\u5BB3                            
-    CD\uFF1A4"
-  - "                          <b>\u300ADMES-S\u300B</b>                   \u8840\u91CF\uFF1A15                                               
-    \u884C\u52D5\uFF1A\u6062\u5FA9\u968A\u4F0D\u7B2C\u4E00\u4F4D\u7684\u8840\u91CF\u30102\u3011                            
-    CD\uFF1A2"
-  - "                          <b>\u300ADMES-F\u300B</b>                   \u8840\u91CF\uFF1A15                                               
-    \u884C\u52D51\uFF1A\u653B\u64CA\u7B2C\u4E00\u4F4D\u9020\u6210\u30104\u3011\u50B7\u5BB3\uFF0C\u4E26\u79FB\u52D5\u5230\u7B2C\u4E00\u4F4D                            
-    CD1\uFF1A3                                                 \u884C\u52D52\uFF1A\u653B\u64CA\u6700\u5F8C\u4E00\u4F4D\u9020\u6210\u30106\u3011\u50B7\u5BB3\uFF0C\u4E26\u79FB\u52D5\u5230\u6700\u5F8C\u4F4D                            
-    CD2\uFF1A5 "
-  - "                        <b>\u300ADMES-B-G\u300B</b>                   \u8840\u91CF\uFF1A15                                               
-    \u884C\u52D51\uFF1A\u653B\u64CA\u6575\u65B9\u7B2C\u4E00\u4F4D\u9020\u6210\u30109\u3011\u50B7\u5BB3\uFF0C\u4E26\u81EA\u8EAB\u7372\u5F97\u30102\u3011\u8B77\u7532                                              
-    CD1\uFF1A4                                                 \u884C\u52D52\uFF1A\u653B\u64CA\u6575\u65B9\u7B2C\u4E00\u4F4D\u548C\u7B2C\u4E8C\u4F4D\u9020\u6210\u30105\u3011\u50B7\u5BB3                            
-    CD2\uFF1A6 "
-  - 
-  - 
-  - 
+  image:
+  - {fileID: 21300000, guid: 13683de92d6256045a8ddd3359e22278, type: 3}
+  - {fileID: 21300000, guid: d8b172c85828195468e7699610e141f6, type: 3}
+  - {fileID: 21300000, guid: 4d07580d14b4e0d46b5e933a74bcf2e0, type: 3}
+  - {fileID: 21300000, guid: 6b839dfed7d71e547ab862bd4ad7f3c9, type: 3}
+  - {fileID: 21300000, guid: 377dc05d73ccdaa48ab12b5e5c3643fa, type: 3}

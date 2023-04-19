@@ -7,7 +7,7 @@ namespace Project.Book_Data
     public class Book_Data : ScriptableObject
     {
         //[SerializeField] public Sprite image;
-        [SerializeField] public string[] text;
+        [SerializeField] public Sprite[] image;
     }
 
 }
