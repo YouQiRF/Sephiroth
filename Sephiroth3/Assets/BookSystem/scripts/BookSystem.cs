@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -42,7 +42,6 @@ public class BookSystem : MonoBehaviour
         player_object.SetActive(player);
         Enemy_object.SetActive(enemy);
         Turntable_object.SetActive(turntable);
-
     }
     
 }
