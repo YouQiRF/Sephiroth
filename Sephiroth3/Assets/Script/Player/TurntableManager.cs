@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -20,16 +21,21 @@ public class TurntableManager : MonoBehaviour
     void Start()
     {
         OnPlayerSummon(0);
-        PlayerPrefs.SetInt("NowSummonA",1);
-        PlayerPrefs.SetInt("NowSummonB",2);
-        SummonerTurntable[0].SetActive(false);
-        SummonerTurntable[1].SetActive(false);
+        FindSummoner();
     }
 
     // Update is called once per frame
     void Update()
     {
         RotatingOuterRing();
+    }
+
+    private void FindSummoner()
+    {
+        SummonerTurntable[0] = GameObject.Find("Turntable_SummonerA");
+        SummonerTurntable[1] = GameObject.Find("Turntable_SummonerB");
+        SummonerTurntable[0].SetActive(false);
+        SummonerTurntable[1].SetActive(false);
     }
 
     public void SimonCheck()
