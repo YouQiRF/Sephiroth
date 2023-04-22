@@ -27,10 +27,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023675032837493519}
   m_LocalRotation: {x: -0, y: -0, z: -0.18017578, w: 0.9836345}
-  m_LocalPosition: {x: -0.0009998903, y: 0.000000014901161, z: 2.1634746}
+  m_LocalPosition: {x: -0.0009998903, y: 0, z: 2.1634746}
   m_LocalScale: {x: 0.26637998, y: 0.26637998, z: 0.26637998}
   m_Children: []
-  m_Father: {fileID: 6096981789915740528}
+  m_Father: {fileID: 6052635036905297562}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6041346321775424102
@@ -93,6 +93,40 @@ EdgeCollider2D:
   - {x: -0.5389664, y: 8.425648}
   - {x: 3.1629078, y: 7.8156633}
   - {x: 3.9575076, y: 9.513281}
+--- !u!1 &4630931829027720655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6052635036905297562}
+  m_Layer: 0
+  m_Name: Turntable_SummonerA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6052635036905297562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4630931829027720655}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2261778545241563519}
+  - {fileID: 4082737619998149935}
+  - {fileID: 1161206882989468901}
+  - {fileID: 6919464638584417674}
+  m_Father: {fileID: 6096981789915740528}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6058874208046848849
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +155,7 @@ Transform:
   m_LocalPosition: {x: 0.00078801066, y: 1.406823, z: 2.1634746}
   m_LocalScale: {x: 0.7524601, y: 0.729441, z: 1.0331644}
   m_Children: []
-  m_Father: {fileID: 6096981789915740528}
+  m_Father: {fileID: 6052635036905297562}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &170061106634001573
@@ -184,7 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6096981789915740528}
   m_Layer: 0
-  m_Name: Turntable_SummonerA
+  m_Name: TurntableA_Owl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,10 +235,7 @@ Transform:
   m_LocalPosition: {x: -0.03, y: 0.015, z: -0.3255866}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2261778545241563519}
-  - {fileID: 4082737619998149935}
-  - {fileID: 1161206882989468901}
-  - {fileID: 6919464638584417674}
+  - {fileID: 6052635036905297562}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -235,10 +266,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8033522321219824565}
   m_LocalRotation: {x: -0, y: -0, z: -0.18017578, w: 0.9836345}
-  m_LocalPosition: {x: -0.001, y: 0, z: 2.1634746}
+  m_LocalPosition: {x: -0.0010000002, y: 0, z: 2.1634746}
   m_LocalScale: {x: 0.26637998, y: 0.26637998, z: 0.26637998}
   m_Children: []
-  m_Father: {fileID: 6096981789915740528}
+  m_Father: {fileID: 6052635036905297562}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7387924417569752699
@@ -330,7 +361,7 @@ Transform:
   m_LocalPosition: {x: -0.0009998903, y: -0.051, z: 2.1634746}
   m_LocalScale: {x: 0.26637998, y: 0.26637998, z: 0.26637998}
   m_Children: []
-  m_Father: {fileID: 6096981789915740528}
+  m_Father: {fileID: 6052635036905297562}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1872286908176945348

@@ -36,6 +36,7 @@ public class TurntableManager : MonoBehaviour
         SummonerTurntable[1] = GameObject.Find("Turntable_SummonerB");
         SummonerTurntable[0].SetActive(false);
         SummonerTurntable[1].SetActive(false);
+        Debug.Log("FindTurntable");
     }
 
     public void SimonCheck()

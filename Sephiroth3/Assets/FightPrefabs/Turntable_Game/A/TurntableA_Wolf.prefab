@@ -1,5 +1,40 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &727726348891657592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5157710042179270986}
+  m_Layer: 0
+  m_Name: Turntable_SummonerA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5157710042179270986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727726348891657592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3740170537469203746}
+  - {fileID: 3740170538378042741}
+  - {fileID: 3740170538683147951}
+  - {fileID: 3740170538234844933}
+  - {fileID: 3740170538997841077}
+  m_Father: {fileID: 3740170537992176028}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3740170537469203744
 GameObject:
   m_ObjectHideFlags: 0
@@ -24,11 +59,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3740170537469203744}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.02, y: 1.388923, z: 2.1634746}
   m_LocalScale: {x: 0.75198835, y: 0.7453696, z: 1.0443805}
   m_Children: []
-  m_Father: {fileID: 3740170537992176028}
+  m_Father: {fileID: 5157710042179270986}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3740170537469203745
@@ -91,7 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3740170537992176028}
   m_Layer: 0
-  m_Name: Turntable_SummonerA
+  m_Name: TurntableA_Wolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,11 +143,7 @@ Transform:
   m_LocalPosition: {x: -0.003, y: 0.025037527, z: -0.3255866}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3740170537469203746}
-  - {fileID: 3740170538378042741}
-  - {fileID: 3740170538683147951}
-  - {fileID: 3740170538234844933}
-  - {fileID: 3740170538997841077}
+  - {fileID: 5157710042179270986}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -144,9 +175,9 @@ Transform:
   m_GameObject: {fileID: 3740170538234844932}
   m_LocalRotation: {x: -0, y: -0, z: 0.98416054, w: 0.17727959}
   m_LocalPosition: {x: -0.03, y: -0.06, z: 2.1634746}
-  m_LocalScale: {x: 0.26637998, y: 0.26637998, z: 0.26637998}
+  m_LocalScale: {x: 0.26638, y: 0.26638, z: 0.26637998}
   m_Children: []
-  m_Father: {fileID: 3740170537992176028}
+  m_Father: {fileID: 5157710042179270986}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 159.57701}
 --- !u!50 &3740170538234844935
@@ -240,7 +271,7 @@ Transform:
   m_LocalPosition: {x: -0.03, y: -0.059999995, z: 2.1634746}
   m_LocalScale: {x: 0.26637998, y: 0.26637998, z: 0.26637998}
   m_Children: []
-  m_Father: {fileID: 3740170537992176028}
+  m_Father: {fileID: 5157710042179270986}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 158.78801}
 --- !u!50 &3740170538378042743
@@ -333,7 +364,7 @@ Transform:
   m_LocalPosition: {x: -0.03, y: -0.059999995, z: 2.1634746}
   m_LocalScale: {x: 0.26637998, y: 0.26637998, z: 0.26637998}
   m_Children: []
-  m_Father: {fileID: 3740170537992176028}
+  m_Father: {fileID: 5157710042179270986}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 158.537}
 --- !u!50 &3740170538683147921
@@ -426,7 +457,7 @@ Transform:
   m_LocalPosition: {x: -0.03, y: -0.059999995, z: 2.1634746}
   m_LocalScale: {x: 0.26637998, y: 0.26637998, z: 0.26637998}
   m_Children: []
-  m_Father: {fileID: 3740170537992176028}
+  m_Father: {fileID: 5157710042179270986}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 159.216}
 --- !u!50 &3740170538997841079
