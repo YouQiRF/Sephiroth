@@ -17,6 +17,7 @@ public class GameUIManager : MonoBehaviour
     void Start()
     {
         _playerManager = FindObjectOfType<PlayerManager>();
+        FindTuntable();
         TurntableUI[0].SetActive(false);
         TurntableUI[1].SetActive(false);
     }
@@ -25,6 +26,12 @@ public class GameUIManager : MonoBehaviour
     void Update()
     {
         ShowActorPoints();
+    }
+
+    private void FindTuntable()
+    {
+        TurntableUI[0] = GameObject.Find("UITurntable_A");
+        TurntableUI[1] = GameObject.Find("UITurntable_B");
     }
 
     private void ShowActorPoints()
