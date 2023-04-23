@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumberA: 1
-  NumberB: 2
+  NumberB: 0
 --- !u!4 &1317911735
 Transform:
   m_ObjectHideFlags: 0

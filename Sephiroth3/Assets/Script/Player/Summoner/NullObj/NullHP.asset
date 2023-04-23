@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c13d3c620c4a32b41b6ba759f7b41939, type: 3}
-  m_Name: Wolf
+  m_Name: NullHP
   m_EditorClassIdentifier: 
   ShowPlayerHP: {fileID: 0}
   ShowPlayerArmor: {fileID: 0}
-  ShowHPFloat: 0.9444444
+  ShowHPFloat: 0
   ShowArmorFloat: 0
-  MaxHP: 18
-  NowHP: 17
-  ArmorValue: 0
-  ArmorDefense: 2
+  MaxHP: 1
+  NowHP: 1
+  ArmorValue: 1
+  ArmorDefense: 1

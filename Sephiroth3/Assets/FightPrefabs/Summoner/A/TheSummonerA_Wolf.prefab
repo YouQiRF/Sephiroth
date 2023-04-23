@@ -673,7 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _summonerFettle: {fileID: 0}
-  thisNumber: 0
+  thisNumber: 1
   nowRound: 0
 --- !u!114 &592230616078887863
 MonoBehaviour:
@@ -1019,7 +1019,7 @@ PrefabInstance:
     - target: {fileID: -7321641654393951199, guid: da3680327a890d44cb561961fd853953,
         type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.026590884
+      value: 0.026591122
       objectReference: {fileID: 0}
     - target: {fileID: -7321641654393951199, guid: da3680327a890d44cb561961fd853953,
         type: 3}
@@ -1494,7 +1494,7 @@ PrefabInstance:
     - target: {fileID: -3104233966201202464, guid: da3680327a890d44cb561961fd853953,
         type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: -0.0033904314
+      value: -0.003390193
       objectReference: {fileID: 0}
     - target: {fileID: -3104233966201202464, guid: da3680327a890d44cb561961fd853953,
         type: 3}
@@ -1534,7 +1534,7 @@ PrefabInstance:
     - target: {fileID: -2628292857713040978, guid: da3680327a890d44cb561961fd853953,
         type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.011115611
+      value: 0.011115849
       objectReference: {fileID: 0}
     - target: {fileID: -2628292857713040978, guid: da3680327a890d44cb561961fd853953,
         type: 3}
@@ -1554,7 +1554,7 @@ PrefabInstance:
     - target: {fileID: -2294921971928048444, guid: da3680327a890d44cb561961fd853953,
         type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.028860837
+      value: 0.028861076
       objectReference: {fileID: 0}
     - target: {fileID: -2294921971928048444, guid: da3680327a890d44cb561961fd853953,
         type: 3}
@@ -2024,7 +2024,7 @@ PrefabInstance:
     - target: {fileID: 2619835161142824705, guid: da3680327a890d44cb561961fd853953,
         type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.10077274
+      value: 0.100773215
       objectReference: {fileID: 0}
     - target: {fileID: 2619835161142824705, guid: da3680327a890d44cb561961fd853953,
         type: 3}
@@ -2044,7 +2044,7 @@ PrefabInstance:
     - target: {fileID: 2710711970263449425, guid: da3680327a890d44cb561961fd853953,
         type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.0012952685
+      value: 0.0012957454
       objectReference: {fileID: 0}
     - target: {fileID: 2710711970263449425, guid: da3680327a890d44cb561961fd853953,
         type: 3}

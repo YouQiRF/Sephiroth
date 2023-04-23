@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _summonerFettle: {fileID: 0}
-  thisNumber: 1
+  thisNumber: 2
   nowRound: 0
 --- !u!114 &1789127444186068044
 MonoBehaviour:

@@ -41,7 +41,7 @@ public class HpUIDisplay : MonoBehaviour
         }
         else
         {
-            if (checkHP._hpData.NowHP <= 0)
+            if (checkHP._hpData.NowHP <= 0 || GameObject.Find(summonerName).GetComponent<SummonerManager>().thisNumber == 0)
             {
                 this.transform.position = Vector3.Lerp(transform.position,
                     new Vector3(this.transform.position.x, 1200, this.transform.position.z), 0.02f);

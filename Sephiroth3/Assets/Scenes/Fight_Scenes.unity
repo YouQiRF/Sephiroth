@@ -307,11 +307,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllObjA:
-  - {fileID: 1213116469584533753, guid: 2dbd22170e13a8041b2283071078bb4d, type: 3}
+  - {fileID: 3179500842136521432, guid: 5f059abbb9653944a8cb22d5b09e001e, type: 3}
   - {fileID: 3740170537992176027, guid: 3b292b2fd7108324bb32b166c3190904, type: 3}
   - {fileID: 7622361041294468314, guid: 27e4cd4ac53647d478eb2cfc47ba3c1c, type: 3}
   AllObjB:
-  - {fileID: 1213116469584533753, guid: 2dbd22170e13a8041b2283071078bb4d, type: 3}
+  - {fileID: 7496091823452631422, guid: a8cd82f1c61e65547b19cede9efdd951, type: 3}
   - {fileID: 1552745907987461728, guid: 610d953ccce85424299e3280911a23b6, type: 3}
   - {fileID: 4381767855580868065, guid: 014a2162e248940488d70f8821adaafb, type: 3}
 --- !u!1001 &95093391
@@ -438,7 +438,7 @@ MonoBehaviour:
   - {fileID: 387900642802784375, guid: 3de3657689f868c4c8d52abdd1da99e5, type: 3}
   - {fileID: 7150488352633001983, guid: 0d6629ed5297a3a45800bd125bb5ff20, type: 3}
   AllObjB:
-  - {fileID: 1213116469584533753, guid: 2dbd22170e13a8041b2283071078bb4d, type: 3}
+  - {fileID: 7077097535258742041, guid: bb91d78d1d9bc714e827bd521ebc8ee7, type: 3}
   - {fileID: 7169016423341281469, guid: 0bec58f9bd41f264cba8b0535b85a9aa, type: 3}
   - {fileID: 5007541553960335744, guid: 9cd4ac1c36f17ae4e94403836c07ac4e, type: 3}
 --- !u!1 &139732865
@@ -3429,11 +3429,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllObjA:
-  - {fileID: 1213116469584533753, guid: 2dbd22170e13a8041b2283071078bb4d, type: 3}
+  - {fileID: 1533422354491292312, guid: 1d7aa19bc91a18b4aabb489eb349b33d, type: 3}
   - {fileID: 1919070324018406189, guid: 40819dcf7f9d1a040ac0b067eab5f95f, type: 3}
   - {fileID: 4292630915639647605, guid: 47ae417146bc44f46b30a17c6d96010c, type: 3}
   AllObjB:
-  - {fileID: 1213116469584533753, guid: 2dbd22170e13a8041b2283071078bb4d, type: 3}
+  - {fileID: 6796060347409720469, guid: 377b44d7e2d96f44d924e07fbabb3da6, type: 3}
   - {fileID: 5500451977641324160, guid: 8dd893e3ba884b04196007210759b93c, type: 3}
   - {fileID: 2697211074898304757, guid: 1c1a2927381cab843a50db4dffdee271, type: 3}
 --- !u!1 &1315123107
@@ -11342,14 +11342,14 @@ RectTransform:
   m_GameObject: {fileID: 4696712866699867446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.82463, y: 0.82463, z: 0.82463}
+  m_LocalScale: {x: 0.742167, y: 0.742167, z: 0.742167}
   m_Children: []
   m_Father: {fileID: 4696712865867599791}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.3, y: 3.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4696712866699867446
@@ -12372,7 +12372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: 4.6}
+  m_AnchoredPosition: {x: 0.4, y: 3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4696712867098597693
