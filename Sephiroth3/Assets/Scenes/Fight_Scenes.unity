@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -397,6 +397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 117681446}
+  - component: {fileID: 117681447}
   m_Layer: 0
   m_Name: TheSummonerManager
   m_TagString: Untagged
@@ -415,11 +416,31 @@ Transform:
   m_LocalPosition: {x: -17.34, y: -2, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
-  - {fileID: 328536153}
   - {fileID: 560632069}
+  - {fileID: 328536153}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &117681447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117681445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb1f00010aee324fb3a0d61d92bbfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllObjA:
+  - {fileID: 1213116469584533753, guid: 2dbd22170e13a8041b2283071078bb4d, type: 3}
+  - {fileID: 387900642802784375, guid: 3de3657689f868c4c8d52abdd1da99e5, type: 3}
+  - {fileID: 7150488352633001983, guid: 0d6629ed5297a3a45800bd125bb5ff20, type: 3}
+  AllObjB:
+  - {fileID: 1213116469584533753, guid: 2dbd22170e13a8041b2283071078bb4d, type: 3}
+  - {fileID: 7169016423341281469, guid: 0bec58f9bd41f264cba8b0535b85a9aa, type: 3}
+  - {fileID: 5007541553960335744, guid: 9cd4ac1c36f17ae4e94403836c07ac4e, type: 3}
 --- !u!1 &139732865
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +786,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheSummonerA_Owl
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150488352633001983, guid: 0d6629ed5297a3a45800bd125bb5ff20,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d6629ed5297a3a45800bd125bb5ff20, type: 3}
@@ -1627,6 +1653,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheSummonerB_Wolf
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169016423341281469, guid: 0bec58f9bd41f264cba8b0535b85a9aa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bec58f9bd41f264cba8b0535b85a9aa, type: 3}
@@ -3356,6 +3387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1281800968}
+  - component: {fileID: 1281800969}
   m_Layer: 5
   m_Name: SummonerUI
   m_TagString: Untagged
@@ -3384,6 +3416,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1281800969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281800967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb1f00010aee324fb3a0d61d92bbfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllObjA:
+  - {fileID: 1213116469584533753, guid: 2dbd22170e13a8041b2283071078bb4d, type: 3}
+  - {fileID: 1919070324018406189, guid: 40819dcf7f9d1a040ac0b067eab5f95f, type: 3}
+  - {fileID: 4292630915639647605, guid: 47ae417146bc44f46b30a17c6d96010c, type: 3}
+  AllObjB:
+  - {fileID: 1213116469584533753, guid: 2dbd22170e13a8041b2283071078bb4d, type: 3}
+  - {fileID: 5500451977641324160, guid: 8dd893e3ba884b04196007210759b93c, type: 3}
+  - {fileID: 2697211074898304757, guid: 1c1a2927381cab843a50db4dffdee271, type: 3}
 --- !u!1 &1315123107
 GameObject:
   m_ObjectHideFlags: 0
@@ -5134,7 +5186,7 @@ PrefabInstance:
     - target: {fileID: 5500451977641324160, guid: 8dd893e3ba884b04196007210759b93c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5500451977641324161, guid: 8dd893e3ba884b04196007210759b93c,
         type: 3}
@@ -8271,7 +8323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3404898584607380057
 Transform:
   m_ObjectHideFlags: 0
@@ -13485,7 +13537,7 @@ PrefabInstance:
     - target: {fileID: 4292630915639647605, guid: 47ae417146bc44f46b30a17c6d96010c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47ae417146bc44f46b30a17c6d96010c, type: 3}
