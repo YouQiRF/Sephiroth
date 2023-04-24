@@ -11,6 +11,7 @@ public class TeachManager : MonoBehaviour
     [SerializeField] public int nowNumber;
     [SerializeField] private GameObject[] teacjObj;
     [SerializeField] private GameObject[] Buttons;
+    [SerializeField] private GameObject PageNumber;
 
     [SerializeField] private Image[] TargetImage;
     [SerializeField] private Sprite onsprite;
@@ -30,6 +31,7 @@ public class TeachManager : MonoBehaviour
     public void OpenTeach()
     {
         chang_target_image();
+        PageNumber.SetActive(true);
         if (!isOpen)
         {
             var GameManager = FindObjectOfType<GamePlayingManager>();
@@ -56,6 +58,7 @@ public class TeachManager : MonoBehaviour
         TeachDisplay();
         ButtonDisplay();
         GameManager.StopGame();
+        PageNumber.SetActive(false);
     }
 
     public void TeachDisplay()
