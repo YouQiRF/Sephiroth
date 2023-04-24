@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 5007541554872020758}
   - component: {fileID: 5007541554872020759}
   m_Layer: 0
-  m_Name: OwlANA
+  m_Name: OwlAN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

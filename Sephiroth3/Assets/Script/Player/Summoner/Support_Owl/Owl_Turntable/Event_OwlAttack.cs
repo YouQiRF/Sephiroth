@@ -11,6 +11,7 @@ public class Event_OwlAttack : TurntableGeneric
     
     public override void OnPointed()
     {
+        var AttackAN = GameObject.Find("OwlAN").GetComponent<AttackDisPlay_Player>();
         if (FindObjectOfType<OwlFettle>().StatyLocation > FindObjectOfType<PlayerFettle>().StatyLocation)
         {
             OnStrike();
@@ -19,6 +20,8 @@ public class Event_OwlAttack : TurntableGeneric
         {
             OnGuerrilla();
         }
+        Creat_Effect_Player.instance.Creat(Creat_Effect_Player.instance.Shake_Camera_M,Creat_Effect_Player.instance.Buff_Hit_pos[0]);
+        AttackAN.OnAttackDisPlay();
     }
 
     private void OnGuerrilla()

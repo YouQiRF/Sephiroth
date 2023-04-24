@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 7150488354100167017}
   - component: {fileID: 7150488354100167016}
   m_Layer: 0
-  m_Name: OwlANA
+  m_Name: OwlAN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -12,17 +12,20 @@ public class EventSummon : TurntableGeneric
     public override void OnPointed()
     {
         //base.OnPointed();
-        if (IsSummon)
+        string thisSummonerName = ThisNo == 1 ? "TheSummonerA" : "TheSummonerB";
+        if (GameObject.Find(thisSummonerName).GetComponent<SummonerManager>().thisNumber != 0)
         {
-            ChangeLocation();
-            //Debug.Log("SummonA");
+            if (IsSummon)
+            {
+                ChangeLocation();
+                //Debug.Log("SummonA");
+            }
+            else
+            {
+                CheckIsFirst();
+                //Debug.Log("SummonB");
+            } 
         }
-        else
-        {
-            CheckIsFirst();
-            //Debug.Log("SummonB");
-        }
-
         //Debug.Log("Summon");
     }
 

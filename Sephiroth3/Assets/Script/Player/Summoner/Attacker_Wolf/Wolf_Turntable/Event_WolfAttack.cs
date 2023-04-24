@@ -9,7 +9,7 @@ public class Event_WolfAttack : TurntableGeneric
     public override void OnPointed()
     {
         //var AttackNumber = FindObjectOfType<LocationManager>();
-        var AttackAN = GameObject.Find("WolfANA").GetComponent<AttackDisPlay_Player>();
+        var AttackAN = GameObject.Find("WolfAN").GetComponent<AttackDisPlay_Player>();
         if (FindObjectOfType<WolfFettle>().StatyLocation > FindObjectOfType<PlayerFettle>().StatyLocation)
         {
             LocationManager.instance.EnemyOnAttackDetected(4);
