@@ -15,5 +15,19 @@ public class SummonerSet : MonoBehaviour
             PlayerPrefs.SetInt("SummonerB",NumberB);
             Debug.Log("IsSet!!!");
         }
+        
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            PlayerPrefs.SetInt("SummonerA",1);
+            PlayerPrefs.SetInt("SummonerB",2);
+            Debug.Log("IsSetA!!!");
+        }
+        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            PlayerPrefs.SetInt("SummonerA",2);
+            PlayerPrefs.SetInt("SummonerB",1);
+            Debug.Log("IsSetB!!!");
+        }
     }
 }
