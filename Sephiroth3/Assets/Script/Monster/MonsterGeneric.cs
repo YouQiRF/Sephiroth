@@ -140,7 +140,12 @@ public class MonsterGeneric : MonoBehaviour
             nowLocation.CheckSurvivalEnemy();
         }
     }
-    
+
+    public void GetHitEffect()
+    {
+        Creat_Effect_Player.instance.Creat(Creat_Effect_Player.instance.Attack_Basic,transform.GetChild(0).gameObject);
+    }
+
     public void GetHealEffect()
     {
         Creat_Effect_Player.instance.Creat(Creat_Effect_Player.instance.Buff_Recover,transform.GetChild(0).gameObject);

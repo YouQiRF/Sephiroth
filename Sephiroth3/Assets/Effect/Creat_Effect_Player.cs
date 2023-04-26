@@ -53,6 +53,7 @@ public class Creat_Effect_Player : MonoBehaviour
         }
 
     }
+
     public void Creat(GameObject Effect, GameObject pos)
     {
         Instantiate(Effect, pos.transform.position, new Quaternion(0, 0, 0, 0));
