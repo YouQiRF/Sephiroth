@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class MouseFettle : FettleGeneric
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnStart()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.OnStart();
     }
 }

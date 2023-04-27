@@ -10,9 +10,8 @@ public class Event_OwlMinHeal : TurntableGeneric
     {
         var HealTarget = FindObjectOfType<LocationManager>();
         var IsDouble = FindObjectOfType<OwlFettle>();
-        float HealNumber = IsDouble.DoubleReady == true ? 4 : 2;
         GetCompareNumber();
-        HealTarget.PlayerLocation[MinNumber]._hpData.NowHP += HealNumber;
+        HealTarget.PlayerLocation[MinNumber]._hpData.NowHP += 2;
         HealTarget.PlayerLocation[MinNumber].GetHealEffect();
     }
     

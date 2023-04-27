@@ -8,13 +8,12 @@ public class Event_owlOnHeal : TurntableGeneric
     {
         var HealTarget = FindObjectOfType<LocationManager>();
         var IsDouble = FindObjectOfType<OwlFettle>();
-        float HealNumber = IsDouble.DoubleReady == true ? 4 : 2;
 
         for (int i = 0; i < 3; i++)
         {
             if (HealTarget.PlayerLocation[i] != null)
             {
-                HealTarget.PlayerLocation[i]._hpData.NowHP += HealNumber;
+                HealTarget.PlayerLocation[i]._hpData.NowHP += 2;
                 HealTarget.PlayerLocation[i].GetHealEffect();
             }
         }

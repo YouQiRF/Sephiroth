@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class Event_MouseMove : TurntableGeneric
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnPointed()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("OnMove");
     }
 }

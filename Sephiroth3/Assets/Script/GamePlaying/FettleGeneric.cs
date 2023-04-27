@@ -9,6 +9,7 @@ public class FettleGeneric : MonoBehaviour
     [SerializeField] public HpData _hpData;
 
     [SerializeField] public int StatyLocation;
+    [SerializeField] public int ThisNumber;
     // Start is called before the first frame update
     void Start()
     {
@@ -87,6 +88,8 @@ public class FettleGeneric : MonoBehaviour
     public virtual void OnDead()
     {
         var LocationM = FindObjectOfType<LocationManager>();
+        var Turntable = FindObjectOfType<TurntableManager>();
+        var UI = FindObjectOfType<GameUIManager>();
         if (LocationM.PlayerLocation[5] == null)
         {
             LocationM.PlayerLocation[5] = LocationM.PlayerLocation[StatyLocation];
@@ -99,6 +102,17 @@ public class FettleGeneric : MonoBehaviour
                 LocationM.PlayerLocation[6] = LocationM.PlayerLocation[StatyLocation];
                 LocationM.PlayerLocation[StatyLocation] = null;
             }
+        }
+        
+        if (PlayerPrefs.GetInt("SummonerA") == ThisNumber)
+        {
+            Turntable.SummonerTurntable[0].SetActive(false);
+            UI.TurntableUI[0].SetActive(false);
+        }
+        else
+        {
+            Turntable.SummonerTurntable[1].SetActive(false);
+            UI.TurntableUI[1].SetActive(false);
         }
     }
 
@@ -131,5 +145,8 @@ public class FettleGeneric : MonoBehaviour
         {
             OnDead();
         }
+        
+        Creat_Effect_Player.instance.Creat(Creat_Effect_Player.instance.Attack_Basic,Creat_Effect_Player.instance.Buff_Hit_pos[StatyLocation]);
+        Creat_Effect_Player.instance.Creat(Creat_Effect_Player.instance.Shake_Camera_S,Creat_Effect_Player.instance.Buff_Hit_pos[StatyLocation]);
     }
 }

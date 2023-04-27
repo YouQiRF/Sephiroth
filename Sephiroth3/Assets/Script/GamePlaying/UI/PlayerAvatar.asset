@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avatarImage:
   - {fileID: 21300000, guid: 718ea455fa677c94fa06ad7fbef56841, type: 3}
-  - {fileID: 21300000, guid: 4d9ac6b68fc4b3247ad3c547689b65f0, type: 3}
-  - {fileID: 21300000, guid: 83be7b82ca8b2b4418633978876babee, type: 3}
-  - {fileID: 21300000, guid: 83be7b82ca8b2b4418633978876babee, type: 3}
+  - {fileID: 21300000, guid: c32370bde69274647a63f0d7ca84caa2, type: 3}
+  - {fileID: 21300000, guid: 072f05c71e9bf4745a708d49b2e870d3, type: 3}
+  - {fileID: 21300000, guid: ecd2c931891e1274db5579d15ddbae60, type: 3}
   teachObj: []

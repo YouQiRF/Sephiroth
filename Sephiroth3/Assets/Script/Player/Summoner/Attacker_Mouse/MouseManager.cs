@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class MouseManager : SummonerManager
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnStart()
     {
-        
+        base.OnStart();
+        _summonerFettle = FindObjectOfType<MouseFettle>();
     }
-
-    // Update is called once per frame
-    void Update()
+    public override void OnSummoner()
     {
-        
+        GetNowRound();
     }
 }
