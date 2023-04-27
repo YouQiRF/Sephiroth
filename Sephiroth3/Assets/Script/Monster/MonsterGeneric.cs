@@ -139,6 +139,7 @@ public class MonsterGeneric : MonoBehaviour
             nowLocation.MonsterLocation[PositionalOrder] = null;
             nowLocation.CheckSurvivalEnemy();
         }
+        GetHitEffect();
     }
 
     public void GetHitEffect()
