@@ -135,9 +135,9 @@ public class GamePlayingManager : MonoBehaviour
                         break;
                     case 4://菁英
                         PlayerWin.OnPlayerWin();
-                        await Task.Delay(2500);
+                        await Task.Delay(3000);
                         Destroy(GameObject.FindWithTag("Build"));
-                        map_time.is_map_time = true;
+                        FindObjectOfType<SpecialGameEnd>().ChooseSummonerObj.SetActive(true);
                         break;
                     case 2://BOSS
                         PlayerWin.OnPlayerWin();

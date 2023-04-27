@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: PlayerAvatar
   m_EditorClassIdentifier: 
   avatarImage:
-  - {fileID: 21300000, guid: 718ea455fa677c94fa06ad7fbef56841, type: 3}
+  - {fileID: 21300000, guid: 14b38fdafb887f3458ed7a511119be93, type: 3}
   - {fileID: 21300000, guid: c32370bde69274647a63f0d7ca84caa2, type: 3}
   - {fileID: 21300000, guid: 072f05c71e9bf4745a708d49b2e870d3, type: 3}
   - {fileID: 21300000, guid: ecd2c931891e1274db5579d15ddbae60, type: 3}
   teachObj: []
+  SummonerFettle:
+  - {fileID: 11400000, guid: fc413562051471343b72d2672e6f8436, type: 2}
+  - {fileID: 11400000, guid: 11eba9bd20afa3f48a4e56232cd3a3ba, type: 2}
+  - {fileID: 11400000, guid: e7c3eead8a68c4a46a9f37e66d82b83f, type: 2}
+  - {fileID: 11400000, guid: 4c21a5a045786e448a64d47e10ad1ebc, type: 2}

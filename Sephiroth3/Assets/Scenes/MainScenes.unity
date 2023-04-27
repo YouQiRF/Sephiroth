@@ -1504,17 +1504,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 927152977}
-        m_MethodName: OnStartSet
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &5669650179587101241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2077,6 +2066,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7620622034451090156, guid: bbae84ea1cd3e6f4e924f2d0987fa6e3,
+        type: 3}
+      propertyPath: _hpData.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620622034451090156, guid: bbae84ea1cd3e6f4e924f2d0987fa6e3,
+        type: 3}
+      propertyPath: _hpData.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c21a5a045786e448a64d47e10ad1ebc,
+        type: 2}
     - target: {fileID: 7620622034451090157, guid: bbae84ea1cd3e6f4e924f2d0987fa6e3,
         type: 3}
       propertyPath: m_Name

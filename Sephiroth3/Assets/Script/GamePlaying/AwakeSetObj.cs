@@ -9,7 +9,6 @@ public class AwakeSetObj : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        Debug.Log("VAR");
         Instantiate(AllObjA[PlayerPrefs.GetInt("SummonerA")], this.transform);
         Instantiate(AllObjB[PlayerPrefs.GetInt("SummonerB")], this.transform);
     }

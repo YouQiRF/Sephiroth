@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Project.PlayerHpData;
+using UnityEngine;
 using UnityEngine.UI;
 namespace Project.AvatarData
 {
@@ -9,5 +10,6 @@ namespace Project.AvatarData
     {
         [SerializeField] public Sprite[] avatarImage;
         [SerializeField] public GameObject[] teachObj;
+        [SerializeField] public HpData[] SummonerFettle;
     }
 }

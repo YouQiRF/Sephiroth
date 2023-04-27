@@ -16,7 +16,12 @@ public class MainSceneSet : MonoBehaviour
     }
     public async void LoadScene_Scene(int SceneID)
     {
-        await Task.Delay(200);
+        
+        if (GameObject.Find("GameStartSet") != null)
+        {
+            FindObjectOfType<GameStart_HPSet>().OnStartSet();
+        }
+        await Task.Delay(500);
         SceneManager.LoadScene(SceneID);
         if (SceneID == GamePlay_scenes_ID)
         {

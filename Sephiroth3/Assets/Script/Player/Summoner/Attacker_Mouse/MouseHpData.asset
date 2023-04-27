@@ -17,6 +17,6 @@ MonoBehaviour:
   ShowHPFloat: 1
   ShowArmorFloat: 0
   MaxHP: 15
-  NowHP: 5
+  NowHP: 15
   ArmorValue: 0
   ArmorDefense: 2
