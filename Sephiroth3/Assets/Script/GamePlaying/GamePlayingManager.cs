@@ -7,6 +7,7 @@ using Project.Event;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GamePlayingManager : MonoBehaviour
 {
@@ -100,22 +101,51 @@ public class GamePlayingManager : MonoBehaviour
         var PointerShow = GameObject.Find("UIPointer").GetComponent<PointerUI>();
         Pointer.IsRun = false;
         PointerShow.MoveSpeed = 0f;
-        PlayerWin.OnPlayerWin();
-
         switch (LVNumber)
         {
             case 0:
+                PlayerWin.OnPlayerWin();
                 await Task.Delay(2500);
                 SceneManager.LoadScene("TeachingB");
                 break;
             case 1:
+                PlayerWin.OnPlayerWin();
                 await Task.Delay(2500);
                 SceneManager.LoadScene("MainScenes");
                 break;
             case 2:
-                await Task.Delay(2500);
-                Destroy(GameObject.FindWithTag("Build"));
-                map_time.is_map_time = true;
+                switch (Map_System.roomcode)
+                {
+                    case 0://一般
+                        PlayerWin.OnPlayerWin();
+                        await Task.Delay(2500);
+                        Destroy(GameObject.FindWithTag("Build"));
+                        map_time.is_map_time = true;
+                        break;
+                    case 1://休息
+                        GameObject.Find("UIAnnounceText").GetComponent<Text>().text = "*按下空白鍵繼續*";
+                        GameObject.Find("Turntable_UI").SetActive(false);
+                        Destroy(GameObject.FindWithTag("Build"));
+                        await Task.Delay(600);
+                        LocationManager.instance.PlayerLocation[1]._hpData.NowHP += (LocationManager.instance.PlayerLocation[1]._hpData.MaxHP / 2);
+                        LocationManager.instance.PlayerLocation[1].GetHealEffect();
+                        GameObject.Find("TheSummonerA").GetComponent<FettleGeneric>()._hpData.NowHP += (GameObject.Find("TheSummonerA").GetComponent<FettleGeneric>()._hpData.MaxHP / 2);
+                        GameObject.Find("TheSummonerB").GetComponent<FettleGeneric>()._hpData.NowHP += (GameObject.Find("TheSummonerA").GetComponent<FettleGeneric>()._hpData.MaxHP / 2);
+                        FindObjectOfType<SpecialGameEnd>().RestEnd();
+                        break;
+                    case 4://菁英
+                        PlayerWin.OnPlayerWin();
+                        await Task.Delay(2500);
+                        Destroy(GameObject.FindWithTag("Build"));
+                        map_time.is_map_time = true;
+                        break;
+                    case 2://BOSS
+                        PlayerWin.OnPlayerWin();
+                        await Task.Delay(2500);
+                        Destroy(GameObject.FindWithTag("Build"));
+                        map_time.is_map_time = true;
+                        break;
+                }
                 break;
         }
     }

@@ -18,17 +18,18 @@ public class Map_System : MonoBehaviour
     [SerializeField] public GameObject recover;
     [SerializeField] public static bool is_next_map = false;
     [SerializeField] public static int Map_level = 0;
+    [SerializeField] private int NowLV;
 
     [Header("地圖狀態")]
-    [SerializeField] public static bool Start_map = true;
-    [SerializeField] public static bool Basic_map = false;
-    [SerializeField] public static bool Black_map = false;
-    [SerializeField] public static bool Recover_map = false;
-    [SerializeField] public static bool Boss_map = false;
-    [SerializeField] public static bool Elite_Enemy = false;
+    [SerializeField] public static bool Start_map = true;//第一關
+    [SerializeField] public static bool Basic_map = false;//
+    [SerializeField] public static bool Black_map = false;//
+    [SerializeField] public static bool Recover_map = false;//
+    [SerializeField] public static bool Boss_map = false;//
+    [SerializeField] public static bool Elite_Enemy = false;//
 
     [Header("MAP")]
-    [SerializeField] public static int roomcode; //  0=戰鬥 1=休息 2=BOSS 3=小黑
+    [SerializeField] public static int roomcode; //  0=戰鬥 1=休息 2=BOSS 4=菁英關
 
 
     int new_map;
@@ -160,6 +161,8 @@ public class Map_System : MonoBehaviour
                 is_creat = false;
             }
         }
+
+        NowLV = roomcode;
     }
 
     void map_reader(bool start, bool basic, bool black, bool recover, bool boss, bool Elite)
