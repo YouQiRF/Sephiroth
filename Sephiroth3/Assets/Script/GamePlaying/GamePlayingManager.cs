@@ -33,10 +33,7 @@ public class GamePlayingManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            StopGame();
-        }
+        
     }
 
     private void EventLoad()
@@ -96,11 +93,8 @@ public class GamePlayingManager : MonoBehaviour
     private async void OnFightEnd(RoundOverDetected obj)
     {
         var PlayerWin = FindObjectOfType<Ending_effect>();
-        var Pointer = FindObjectOfType<PointerManager>();
+        StopGame();
         // var nextLV = FindObjectOfType<SetActiveButton>();
-        var PointerShow = GameObject.Find("UIPointer").GetComponent<PointerUI>();
-        Pointer.IsRun = false;
-        PointerShow.MoveSpeed = 0f;
         switch (LVNumber)
         {
             case 0:
