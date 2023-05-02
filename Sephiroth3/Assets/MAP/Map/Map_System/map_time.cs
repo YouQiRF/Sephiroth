@@ -14,7 +14,7 @@ public class map_time : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //Debug.Log("Start" +PlayerPrefs.GetInt("NeedReset"));
     }
 
     // Update is called once per frame
@@ -22,9 +22,13 @@ public class map_time : MonoBehaviour
     {
         //Debug.Log(is_map_time);
         //ResetMap();
+        if (PlayerPrefs.GetInt("NeedReset") == 1)
+        {
+            ManualoperationResetMap();
+            PlayerPrefs.SetInt("NeedReset",0);
+        }
+        //Debug.Log(PlayerPrefs.GetInt("NeedReset"));
         changscene(3, 4);
-
-
     }
     /*void SetActiveWithTag(bool now_bool) //刪除地圖物件
     {
@@ -36,7 +40,7 @@ public class map_time : MonoBehaviour
         ;
     }*/
 
-    void ResetMap()
+    void ManualoperationResetMap()
     {
         if (is_new_game)
         {
@@ -53,6 +57,15 @@ public class map_time : MonoBehaviour
             Map_System.Map_level = 0;
             // map = GameObject.FindGameObjectsWithTag("ChooseMap");
         }
+        Debug.Log("Set"+PlayerPrefs.GetInt("NeedReset"));
+    }
+    
+    public void ResetMap()
+    {
+        mapmanager.GetComponent<MapManager>().GenerateNewMap();
+        is_map_time = true;
+        Map_System.Map_level = 0;
+        Debug.Log("rest");
     }
 
     static void changscene(int a, int b)

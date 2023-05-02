@@ -137,6 +137,7 @@ public class GamePlayingManager : MonoBehaviour
                         PlayerWin.OnPlayerWin();
                         await Task.Delay(2500);
                         Destroy(GameObject.FindWithTag("Build"));
+                        PlayerPrefs.SetInt("NeedReset",1);
                         map_time.is_map_time = true;
                         break;
                 }
@@ -146,6 +147,7 @@ public class GamePlayingManager : MonoBehaviour
 
     private async void OnPlayerDead(PlayerDeadDetected obj)
     {
+        PlayerPrefs.SetInt("NeedReset",1);
         var PlayerDead = FindObjectOfType<Ending_effect>();
         var Pointer = FindObjectOfType<PointerManager>();
         var PointerShow = FindObjectsOfType<PointerUI>();

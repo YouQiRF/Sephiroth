@@ -9,7 +9,7 @@ public class MainSceneSet : MonoBehaviour
     public int GamePlay_scenes_ID;
     private void Start()
     {
-
+        Debug.Log(PlayerPrefs.GetInt("NeedReset"));
     }
     private void Update()
     {
