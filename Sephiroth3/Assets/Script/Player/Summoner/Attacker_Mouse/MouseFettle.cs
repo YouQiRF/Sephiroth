@@ -24,12 +24,12 @@ public class MouseFettle : FettleGeneric
         await Task.Delay(600);
         if (BeforLocaTion > StatyLocation)
         {
-            LocationManager.instance.OtherAttackDetected(8,hitEnemy);
+            LocationManager.instance.OtherAttackDetected(4,hitEnemy);
             //Debug.Log("AttackFront");
         }
         else
         {
-            LocationManager.instance.EnemyOnAttackDetected(8);
+            LocationManager.instance.EnemyOnAttackDetected(4);
             //Debug.Log("AttackBehind");
         }
         AttackMove.OnAttackDisPlay();
