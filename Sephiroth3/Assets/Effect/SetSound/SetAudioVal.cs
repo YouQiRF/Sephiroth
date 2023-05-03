@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SetAudioVal : MonoBehaviour
 {
-    public static float Sound_Val = 1;
+    public static float Sound_Val = 0.3f;
     public Slider bar;
     void Start()
     {

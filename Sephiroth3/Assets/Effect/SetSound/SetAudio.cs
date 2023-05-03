@@ -19,6 +19,7 @@ public class SetAudio : MonoBehaviour
     public static bool play_BGM = false;
     void Start()
     {
+        SetAudioVal.Sound_Val = 0.2f;
         DontDestroyOnLoad(this);
     }
     void Update()
