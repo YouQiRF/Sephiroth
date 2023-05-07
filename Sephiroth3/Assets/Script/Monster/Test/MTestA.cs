@@ -19,8 +19,8 @@ public class MTestA : MonsterGeneric
         base.OnPassRound();
     }
 
-    public override void ShowEnemyHP()
+    public override void ShowEnemyFettle()
     {
-        base.ShowEnemyHP();
+        base.ShowEnemyFettle();
     }
 }

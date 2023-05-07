@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8767c2a3beb3559478061199acd7fc4f, type: 3}
+  m_Name: BehaviourImg
+  m_EditorClassIdentifier: 
+  avatarImage:
+  - {fileID: 21300000, guid: c926f2d77fa7e9946871a36a143c1a6f, type: 3}
+  - {fileID: 21300000, guid: 52293f6ee1593b1468480a02b823e7cb, type: 3}
+  - {fileID: 21300000, guid: f2286c75216c1264aa0a0b18ef4abe3d, type: 3}
+  - {fileID: 21300000, guid: f6426b6cc6d263948ae6dfdbd8b86c10, type: 3}
+  - {fileID: 21300000, guid: daf05f8d261e674458d7dc32da8c5ed9, type: 3}
+  - {fileID: 21300000, guid: cc7cac165bbba494fa0afc01cfc454c0, type: 3}
+  teachObj: []
+  SummonerFettle: []

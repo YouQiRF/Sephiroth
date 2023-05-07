@@ -18,12 +18,13 @@ public class MonsterGeneric : MonoBehaviour
     [SerializeField] public int AttackDamage;
     [SerializeField] public int PositionalOrder;
     [SerializeField] public bool IsDead;
-    [Header("UI數值")] 
-    [SerializeField] public Image ShowHPimg;
+    [Header("UI數值")]
     [SerializeField] public float ShowHPNumber;
     [Header("物件")] 
-    [SerializeField] private MonsterAttackUI CDUI;
+    [SerializeField] private BehaviourImgSet BehaviourImg;
     [SerializeField] private Animator AN;
+    [SerializeField] public Image ShowHPimg;
+    [SerializeField] public GameObject ShowCDImg;
     
     // Start is called before the first frame update
     public async virtual void Start()
@@ -32,7 +33,7 @@ public class MonsterGeneric : MonoBehaviour
         EnemyNowHP = EnemyMaxHP;
         
         AN = transform.GetChild(0).GetComponent<Animator>();
-        HPUISet();
+        FettleUISet();
         LocationCheck();
         await Task.Delay(300);
         CDUIDetected();
@@ -41,7 +42,7 @@ public class MonsterGeneric : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
-        ShowEnemyHP();
+        ShowEnemyFettle();
         if (IsDead)
         {
             transform.position = Vector3.Lerp(this.transform.position, new Vector3(15,-2,0), 0.05f);
@@ -73,25 +74,50 @@ public class MonsterGeneric : MonoBehaviour
         StrikeTarget.PlayerOnAttackDetected(AttackDamage);
     }
 
-    public virtual void HPUISet()
+    public virtual void FettleUISet()
     {
         if (PositionalOrder == 0)
         {
             ShowHPimg = GameObject.Find("EnemyHpShowA").GetComponent<Image>();
+            ShowCDImg = GameObject.Find("EnemyCDA");
+            BehaviourImg = GameObject.Find("BehaviourA").GetComponent<BehaviourImgSet>();
         }
         else
         {
             if (PositionalOrder == 1)
             {
                 ShowHPimg = GameObject.Find("EnemyHpShowB").GetComponent<Image>();
+                ShowCDImg = GameObject.Find("EnemyCDB");
+                BehaviourImg = GameObject.Find("BehaviourB").GetComponent<BehaviourImgSet>();
             }
             else
             {
                 ShowHPimg = GameObject.Find("EnemyHpShowC").GetComponent<Image>();
+                ShowCDImg = GameObject.Find("EnemyCDC");
+                BehaviourImg = GameObject.Find("BehaviourC").GetComponent<BehaviourImgSet>();
             } 
         }
+        BehaciourImgChange(0,1);
     }
 
+    public void BehaciourImgChange(int ImgA,int ImgB)
+    {
+        BehaviourImg.TopImg.sprite = BehaviourImg.ImgObj.avatarImage[ImgA];
+        BehaviourImg.BackImg.sprite = BehaviourImg.ImgObj.avatarImage[ImgB];
+    }
+
+    private void CDUIDetected()
+    {
+        if (AttackCD == 0)
+        {
+            BehaviourImg.ShowImg.SetActive(false);
+        }
+        else
+        {
+            BehaviourImg.ShowImg.SetActive(true);
+        }
+    }
+    /*
     private void CDUIDetected()
     {
         if (AttackCD == 0)
@@ -121,7 +147,7 @@ public class MonsterGeneric : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
 
     public virtual void LocationCheck()
     {
@@ -152,11 +178,14 @@ public class MonsterGeneric : MonoBehaviour
         Creat_Effect_Player.instance.Creat(Creat_Effect_Player.instance.Buff_Recover,transform.GetChild(0).gameObject);
         MusicManager.instance.PlayHeal();
     }
-    public virtual void ShowEnemyHP()
+    public virtual void ShowEnemyFettle()
     {
+        float CDRotation = -180 + (30 * AttackCD);
         EnemyNowHP = Mathf.Clamp(EnemyNowHP, 0, EnemyMaxHP);
         ShowHPNumber = EnemyNowHP/EnemyMaxHP;
         ShowHPimg.fillAmount = Mathf.Lerp(ShowHPimg.fillAmount, ShowHPNumber, 0.06f);
+        ShowCDImg.transform.rotation = Quaternion.Lerp(ShowCDImg.transform.rotation, Quaternion.Euler(0,0,CDRotation), 0.06f);
+        //Debug.Log(CDRotation);
     }
 
 }

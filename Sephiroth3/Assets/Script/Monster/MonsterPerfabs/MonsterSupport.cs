@@ -27,4 +27,10 @@ public class MonsterSupport : MonsterGeneric
             }
         }
     }
+
+    public override void FettleUISet()
+    {
+        base.FettleUISet();
+        BehaciourImgChange(4,5);
+    }
 }
