@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Project.PlayerHpData;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class FettleGeneric : MonoBehaviour
 {
     [SerializeField] public HpData _hpData;
-
+    [SerializeField] public GameObject Efficacy;
+    [SerializeField] public bool IsSummoner = true;
     [SerializeField] public int StatyLocation;
     [SerializeField] public int ThisNumber;
     // Start is called before the first frame update
@@ -37,27 +39,31 @@ public class FettleGeneric : MonoBehaviour
         {
             _hpData.ShowPlayerHP = GameObject.Find("PlayerHpShow").GetComponent<Image>();
             _hpData.ShowPlayerArmor = GameObject.Find("PlayerArmorShow").GetComponent<Image>();
+            IsSummoner = false;
         }
         
         if (StatyLocation == 3)
         {
             _hpData.ShowPlayerHP = GameObject.Find("SummonAHpShow").GetComponent<Image>();
             _hpData.ShowPlayerArmor = GameObject.Find("SummonAArmorShow").GetComponent<Image>();
+            Efficacy = GameObject.Find("EfficacyA");
         }
         
         if (StatyLocation == 4)
         {
             _hpData.ShowPlayerHP = GameObject.Find("SummonBHpShow").GetComponent<Image>();
             _hpData.ShowPlayerArmor = GameObject.Find("SummonBArmorShow").GetComponent<Image>();
+            Efficacy = GameObject.Find("EfficacyB");
         }
         //_hpData.ShowPlayerHP = GameObject.Find("PlayerHpShow").GetComponent<Image>();
     }
 
     public virtual void OnUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (IsSummoner && _hpData.NowHP > 0)
         {
-            //OnHitDetected(0,10);  
+            EfficacyDetected();
+            
         }
     }
 
@@ -106,13 +112,32 @@ public class FettleGeneric : MonoBehaviour
         
         if (PlayerPrefs.GetInt("SummonerA") == ThisNumber)
         {
-            Turntable.SummonerTurntable[0].SetActive(false);
-            UI.TurntableUI[0].SetActive(false);
+            Turntable.SummonerTurntable[1].SetActive(false);
+            UI.TurntableUI[1].SetActive(false);
         }
         else
         {
-            Turntable.SummonerTurntable[1].SetActive(false);
-            UI.TurntableUI[1].SetActive(false);
+            Turntable.SummonerTurntable[0].SetActive(false);
+            UI.TurntableUI[0].SetActive(false);
+        }
+    }
+
+    public void EfficacyDetected()
+    {
+        if (StatyLocation <= 2)
+        {
+            if (StatyLocation > FindObjectOfType<PlayerFettle>().StatyLocation)
+            {
+                Efficacy.transform.rotation = Quaternion.Lerp(Efficacy.transform.rotation,Quaternion.Euler(0,0,1),0.08f );
+            }
+            else
+            {
+                Efficacy.transform.rotation = Quaternion.Lerp(Efficacy.transform.rotation,Quaternion.Euler(0,0,180),0.08f );
+            }
+        }
+        else
+        {
+            Efficacy.transform.rotation = Quaternion.Lerp(Efficacy.transform.rotation,Quaternion.Euler(0,0,90),0.08f );
         }
     }
 
