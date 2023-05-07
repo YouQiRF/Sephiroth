@@ -4533,7 +4533,6 @@ MonoBehaviour:
   Efficacy: {fileID: 0}
   IsSummoner: 1
   StatyLocation: 1
-  ThisNumber: 0
 --- !u!1 &792597227516661882
 GameObject:
   m_ObjectHideFlags: 0

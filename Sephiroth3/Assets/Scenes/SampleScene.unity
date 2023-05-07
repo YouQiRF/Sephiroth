@@ -550,8 +550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7358efad8c1c12f49b23ffe46167ab5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumberA: 3
-  NumberB: 1
+  NumberA: 2
+  NumberB: 3
 --- !u!4 &1317911735
 Transform:
   m_ObjectHideFlags: 0

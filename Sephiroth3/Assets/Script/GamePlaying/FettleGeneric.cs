@@ -11,7 +11,6 @@ public class FettleGeneric : MonoBehaviour
     [SerializeField] public GameObject Efficacy;
     [SerializeField] public bool IsSummoner = true;
     [SerializeField] public int StatyLocation;
-    [SerializeField] public int ThisNumber;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,7 +62,6 @@ public class FettleGeneric : MonoBehaviour
         if (IsSummoner && _hpData.NowHP > 0)
         {
             EfficacyDetected();
-            
         }
     }
 
@@ -109,16 +107,19 @@ public class FettleGeneric : MonoBehaviour
                 LocationM.PlayerLocation[StatyLocation] = null;
             }
         }
-        
-        if (PlayerPrefs.GetInt("SummonerA") == ThisNumber)
+
+        if (IsSummoner)
         {
-            Turntable.SummonerTurntable[1].SetActive(false);
-            UI.TurntableUI[1].SetActive(false);
-        }
-        else
-        {
-            Turntable.SummonerTurntable[0].SetActive(false);
-            UI.TurntableUI[0].SetActive(false);
+            if (PlayerPrefs.GetInt("SummonerA") == this.gameObject.GetComponent<SummonerManager>().thisNumber)
+            {
+                Turntable.SummonerTurntable[0].SetActive(false);
+                UI.TurntableUI[0].SetActive(false);
+            }
+            else
+            {
+                Turntable.SummonerTurntable[1].SetActive(false);
+                UI.TurntableUI[1].SetActive(false);
+            } 
         }
     }
 
