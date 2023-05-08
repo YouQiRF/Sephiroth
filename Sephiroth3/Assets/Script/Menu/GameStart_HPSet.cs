@@ -11,8 +11,7 @@ public class GameStart_HPSet : MonoBehaviour
     {
         for (int i = 0; i < _hpData.Length; i++)
         {
-            _hpData[i].NowHP = 999;
-            //Debug.Log(i);
+            _hpData[0].NowHP = 999;
         }
         PlayerPrefs.SetInt("SummonerA",1);
         PlayerPrefs.SetInt("SummonerB",0);

@@ -19,9 +19,13 @@ public class MainSceneSet : MonoBehaviour
         
         if (GameObject.Find("GameStartSet") != null)
         {
-            FindObjectOfType<GameStart_HPSet>().OnStartSet();
+            if (PlayerPrefs.GetInt("NeedReset") == 1)
+            {
+                FindObjectOfType<GameStart_HPSet>().OnStartSet();
+                //PlayerPrefs.SetInt("NeedReset",0);
+            }
         }
-        await Task.Delay(500);
+        await Task.Delay(700);
         SceneManager.LoadScene(SceneID);
         if (SceneID == GamePlay_scenes_ID)
         {

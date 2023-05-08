@@ -39,12 +39,14 @@ public class ChooseManager : MonoBehaviour
     public void ChangeSummonerA()
     {
         PlayerPrefs.SetInt("SummonerA",ChooseNumber);
+        Avatar.SummonerFettle[ChooseNumber].NowHP = 999;
         map_time.is_map_time = true;
     }
     
     public void ChangeSummonerB()
     {
         PlayerPrefs.SetInt("SummonerB",ChooseNumber);
+        Avatar.SummonerFettle[ChooseNumber].NowHP = 999;
         map_time.is_map_time = true;
     }
 
