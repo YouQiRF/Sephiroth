@@ -129,16 +129,16 @@ public class FettleGeneric : MonoBehaviour
         {
             if (StatyLocation > FindObjectOfType<PlayerFettle>().StatyLocation)
             {
-                Efficacy.transform.rotation = Quaternion.Lerp(Efficacy.transform.rotation,Quaternion.Euler(0,0,1),0.08f );
+                Efficacy.transform.rotation = Quaternion.Lerp(Efficacy.transform.rotation,Quaternion.Euler(0,0,1),0.1f );
             }
             else
             {
-                Efficacy.transform.rotation = Quaternion.Lerp(Efficacy.transform.rotation,Quaternion.Euler(0,0,180),0.08f );
+                Efficacy.transform.rotation = Quaternion.Lerp(Efficacy.transform.rotation,Quaternion.Euler(0,0,180),0.1f );
             }
         }
         else
         {
-            Efficacy.transform.rotation = Quaternion.Lerp(Efficacy.transform.rotation,Quaternion.Euler(0,0,90),0.08f );
+            Efficacy.transform.rotation = Quaternion.Lerp(Efficacy.transform.rotation,Quaternion.Euler(0,0,90),0.1f );
         }
     }
 
