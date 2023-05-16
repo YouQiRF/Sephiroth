@@ -18,8 +18,8 @@ public class SummonerSet : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.W))
         {
-            PlayerPrefs.SetInt("SummonerA",1);
-            PlayerPrefs.SetInt("SummonerB",2);
+            PlayerPrefs.SetInt("SummonerA",2);
+            PlayerPrefs.SetInt("SummonerB",3);
             Debug.Log("IsSetA!!!");
         }
         

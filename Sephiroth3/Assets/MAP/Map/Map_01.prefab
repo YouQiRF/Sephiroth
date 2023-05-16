@@ -437,11 +437,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: map1_1_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6891145564970717024, guid: 05bbd0eedc4b40e47be150eba8c10bf1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6998703176706358049, guid: 05bbd0eedc4b40e47be150eba8c10bf1,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 7062740095823335581, guid: 05bbd0eedc4b40e47be150eba8c10bf1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8199154618215417749, guid: 05bbd0eedc4b40e47be150eba8c10bf1,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
