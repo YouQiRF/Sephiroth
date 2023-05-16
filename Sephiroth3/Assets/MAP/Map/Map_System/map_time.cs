@@ -26,6 +26,7 @@ public class map_time : MonoBehaviour
         {
             ManualoperationResetMap();
             PlayerPrefs.SetInt("NeedReset",0);
+            Debug.Log("Now"+PlayerPrefs.GetInt("NeedReset"));
         }
         //Debug.Log(PlayerPrefs.GetInt("NeedReset"));
         changscene(3, 4);
@@ -57,7 +58,7 @@ public class map_time : MonoBehaviour
             Map_System.Map_level = 0;
             // map = GameObject.FindGameObjectsWithTag("ChooseMap");
         }
-        Debug.Log("Set"+PlayerPrefs.GetInt("NeedReset"));
+        Debug.Log("Befor"+PlayerPrefs.GetInt("NeedReset"));
     }
     
     public void ResetMap()

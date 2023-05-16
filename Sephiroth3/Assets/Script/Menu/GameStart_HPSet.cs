@@ -14,6 +14,7 @@ public class GameStart_HPSet : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             PlayerPrefs.SetInt("NeedReset",1);
+            map_time.is_new_game = true;
             Debug.Log(PlayerPrefs.GetInt("NeedReset"));
         }
     }
