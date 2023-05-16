@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -10204,6 +10204,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOpen: 0
   nowNumber: 0
+  hpSetObj:
+  - {fileID: 11400000, guid: 9cd431b84e2420845bb94e4f0314abd4, type: 2}
+  - {fileID: 11400000, guid: 2f668d95e9d84684f94a6a4623419f6b, type: 2}
+  - {fileID: 11400000, guid: 45216b13b207bf74397c791968fee713, type: 2}
   teacjObj:
   - {fileID: 730708304}
   - {fileID: 1906391940}

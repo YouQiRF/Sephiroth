@@ -2232,6 +2232,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOpen: 0
   nowNumber: 0
+  hpSetObj:
+  - {fileID: 11400000, guid: 9cd431b84e2420845bb94e4f0314abd4, type: 2}
+  - {fileID: 11400000, guid: 2f668d95e9d84684f94a6a4623419f6b, type: 2}
+  - {fileID: 11400000, guid: 45216b13b207bf74397c791968fee713, type: 2}
   teacjObj:
   - {fileID: 396257658}
   - {fileID: 365484109}
@@ -5832,9 +5836,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d7171dd163c35449760c884be150b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hpData: {fileID: 11400000, guid: fc413562051471343b72d2672e6f8436, type: 2}
+  _hpData: {fileID: 11400000, guid: 9cd431b84e2420845bb94e4f0314abd4, type: 2}
+  Efficacy: {fileID: 0}
+  IsSummoner: 1
   StatyLocation: 1
-  ThisNumber: 0
 --- !u!1 &792597227516661882
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,8 +6032,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hpData: {fileID: 11400000, guid: e7c3eead8a68c4a46a9f37e66d82b83f, type: 2}
+  Efficacy: {fileID: 0}
+  IsSummoner: 1
   StatyLocation: 4
-  ThisNumber: 0
 --- !u!1 &792597228691677488
 GameObject:
   m_ObjectHideFlags: 0
@@ -10811,8 +10817,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hpData: {fileID: 11400000, guid: 11eba9bd20afa3f48a4e56232cd3a3ba, type: 2}
+  Efficacy: {fileID: 0}
+  IsSummoner: 1
   StatyLocation: 3
-  ThisNumber: 0
 --- !u!1 &2364825290267744542
 GameObject:
   m_ObjectHideFlags: 0

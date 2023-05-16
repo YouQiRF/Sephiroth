@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Project.AvatarData;
+using Project.PlayerHpData;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TeachManager : MonoBehaviour
 {
     [SerializeField] public bool isOpen;
     [SerializeField] public int nowNumber;
+    [SerializeField] private HpData[] hpSetObj;
     [SerializeField] private GameObject[] teacjObj;
     [SerializeField] private GameObject[] Buttons;
     [SerializeField] private GameObject PageNumber;
@@ -20,14 +23,24 @@ public class TeachManager : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
-        var HPSet = FindObjectOfType<GameStart_HPSet>();
-        HPSet.OnStartSet();
+        StartHPSet();
         await Task.Delay(500); OpenTeach();
     }
-    void update()
+    void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainScenes");
+        }
     }
+
+    private void StartHPSet()
+    {
+        hpSetObj[0].NowHP = 15;
+        hpSetObj[1].NowHP = 18;
+        hpSetObj[2].NowHP = 15;
+    }
+
     public void OpenTeach()
     {
         chang_target_image();
