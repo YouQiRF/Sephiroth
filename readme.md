@@ -27,4 +27,4 @@
 
 ### 遊戲玩法
 [![HowToPlay](https://i.imgur.com/Uxbz9vO.jpg)](https://youtu.be/1FPNGZSyPrw)
-點擊教學影片
+<center>點擊圖片看完整教學影片</center>
