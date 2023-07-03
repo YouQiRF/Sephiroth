@@ -16,6 +16,7 @@ public class Destroy_recover : MonoBehaviour
         if (Map_System.Recover_map == false)
         {
             Destroy(gameObject);
+            Debug.Log("git test");
         }
     }
 }
