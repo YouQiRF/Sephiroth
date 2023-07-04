@@ -28,11 +28,3 @@
 ### 遊戲玩法
 [![HowToPlay](https://i.imgur.com/Uxbz9vO.jpg)](https://youtu.be/1FPNGZSyPrw)
 <center>點擊圖片看完整教學影片</center>
-
-
-
-
-### 執行檔連結
-[PC端執行檔](https://drive.google.com/drive/folders/1TzN2xRv99TqyxWd26laDFssIbDHm50Gv?usp=drive_link)  
-
-[Android APK](https://drive.google.com/drive/folders/1nrlnKRBl1_iNw-s0x-zd8njG4maAZgBM?usp=drive_link)
